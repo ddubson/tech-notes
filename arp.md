@@ -3,11 +3,13 @@
 Because there are both:
 
 * Network-Layer addresses \(IP addresses\)
-* Link-Layer addresses \(MAC addresses\)	
+* Link-Layer addresses \(MAC addresses\)    
 
 There is a need for translation between two addresses schemes:
 
-	**Address Resolution Protocol \(ARP\)** - translates between MAC and IP addresses
+```
+**Address Resolution Protocol (ARP)** - translates between MAC and IP addresses
+```
 
 ![](/assets/arp-1.png)
 
@@ -21,7 +23,8 @@ There is a need for translation between two addresses schemes:
 
 * Each node \(host or router\) has an ARP table in its memory, which contains mappings of IP addresses to MAC addresses.
 * ARP table also contains a time-to-live \(TTL\) value, which indicates when each mapping will be deleted from the table. \(typical expiration is 20mins\)
-* The table does not necessarily contain an entry for every node on the subnet; some nodes may have had entries that have expired, whereas other nodes may never have been entered into the table. 
+* The table does not necessarily contain an entry for every node on the subnet; some nodes may have had entries that have expired, whereas other nodes may never have been entered into the table.
+
   * Suppose that node 222.222.222.220 wants to send a datagram that is IP-addressed to another node on that subnet
   * The sending node needs to obtain the MAC address of the destination node, given the IP address of that node.
   * If the sending node does not have an ARP entry for the destination host, the sender uses the ARP protocol to resolve the address.
@@ -37,6 +40,7 @@ There is a need for translation between two addresses schemes:
   * The querying node can then update its ARP table and send its IP datagram, encapsulated in a link-layer frame whose destination MAC is that of the node responding to the earlier ARP query.
 
 * The query ARP message is sent within a broadcast frame, whereas the response ARP message is sent within a standard frame.
+
 * ARP is a plug-and-play - a node's ARP table gets built automatically - it doesn't have to be configured by a system's administrator.
 * If a node becomes disconnected from the subnet, its entry is eventually deleted from the tables of the nodes remaining in the subnet.
 * ARP is best considered a protocol that straddles the boundary between the link and network layers - not fitting neatly into the simple layered protocol stack.
@@ -45,7 +49,7 @@ There is a need for translation between two addresses schemes:
 
 ![](/assets/arp-2.png)
 
- There are two types of nodes: **hosts** and **routers**
+There are two types of nodes: **hosts** and **routers**
 
 * Each host has exactly one IP address and one adapter
 * A router has an IP address for each of its interfaces.
