@@ -6,6 +6,8 @@
     * [Switches](switches.md)
     * [Hubs](hubs.md)
     * [Routers](routers.md)
+  * Tools
+    * [tools.md](tools.md)
   * [ARP](arp.md)
   * [ICMP](icmp.md)
   * [SSL and TLS](ssl-and-tls.md)
@@ -17,8 +19,6 @@
   * [Traffic Classifications](traffic-classifications.md)
   * [Ethernet](ethernet.md)
   * [Fibre Channel](fibre-channel.md)
-  * Tools
-    * [tools.md](tools.md)
 
 
 
