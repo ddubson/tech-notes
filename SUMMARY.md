@@ -26,5 +26,4 @@
 * Linux
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
-    * Common Commands
 
