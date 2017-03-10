@@ -243,17 +243,17 @@ e.g.
 * Reverse order is necessary to make delegation sensible.
 * Presentation Format
 
-	`owner-name		[TTL]	IN	PTR		<domain-name>`
+  `owner-name        [TTL]    IN    PTR        <domain-name>`
 
-###  ‘CNAME’ Record - Alias
+### ‘CNAME’ Record - Alias
 
 * Presentation format:
 
-`owner-name		[TTL]	IN	CNAME	<domain-name>`
+`owner-name        [TTL]    IN    CNAME    <domain-name>`
 
 e.g.
 
-`alias		3600	IN	CNAME	official.infoblox.com`
+`alias        3600    IN    CNAME    official.infoblox.com`
 
 * CNAME records are singletons - no other records can be attached if one exists.
 * Queries for a record type other than CNAME wouldn’t match the CNAME
@@ -266,11 +266,11 @@ e.g.
 
 * Presentation format:
 
-`owner-name		[TTL]	IN 		MX		<16-bit preference>	<mail exchanger>`
+`owner-name        [TTL]    IN         MX        <16-bit preference>    <mail exchanger>`
 
 e.g.
 
-`@		IN	MX	10 mx1.infoblox.com`
+`@        IN    MX    10 mx1.infoblox.com`
 
 * MX records list the mail exchangers for an email destination
 
@@ -278,13 +278,13 @@ e.g.
 
 * Presentation format:
 
-`owner-name		[TTL]	IN	SRV		<16-bit priority>	<16-bit weight>		<port>	<target>`
+`owner-name        [TTL]    IN    SRV        <16-bit priority>    <16-bit weight>        <port>    <target>`
 
-e.g. 
+e.g.
 
 ```
-_http._tcp.www		IN	SRV		0	0	80	www1
-_http._tcp.www		IN	SRV		0	0	80	www2
+_http._tcp.www        IN    SRV        0    0    80    www1
+_http._tcp.www        IN    SRV        0    0    80    www2
 ```
 
 ### ‘TXT’ Record
@@ -293,35 +293,35 @@ _http._tcp.www		IN	SRV		0	0	80	www2
 * Allows to associate free format text with a domain name
 * Presentation format:
 
-`owner-name		[TTL]	IN	TXT		“string” [“string” …]`
+`owner-name        [TTL]    IN    TXT        “string” [“string” …]`
 
 e.g.
 
-`@	IN	TXT		“infoblox.com.	IN	TXT “v=spf1 mx a”`
+`@    IN    TXT        “infoblox.com.    IN    TXT “v=spf1 mx a”`
 
 ### ‘SOA’ Record - Start of Authority \(Infrastructure\)
 
 * Presentation format:
 
-`owner-name		[TTL]	IN SOA	<mname>	<rname> <32-bit serial number>`
+`owner-name        [TTL]    IN SOA    <mname>    <rname> <32-bit serial number>`
 
 e.g.
 
-`IN		SOA		ns1.infoblox.com.	dns.infoblox.com.	(2015060600, 1h, 15m, 30d, 10m)`
+`IN        SOA        ns1.infoblox.com.    dns.infoblox.com.    (2015060600, 1h, 15m, 30d, 10m)`
 
 ### ’NS’ Record - Namespace \(Infrastructure\)
 
 * Presentation format:
 
-`owner-name		[TTL]	IN	NS	<name-server>`
+`owner-name        [TTL]    IN    NS    <name-server>`
 
 e.g.
 
 ```
-@		IN	NS	ns1.infoblox.com.
-		IN	NS	ns2.infoblox.com.
-		IN	NS	ns3.infoblox.com.
-		IN	NS	ns4.infoblox.com.
+@        IN    NS    ns1.infoblox.com.
+        IN    NS    ns2.infoblox.com.
+        IN    NS    ns3.infoblox.com.
+        IN    NS    ns4.infoblox.com.
 ```
 
 ## Dynamic Update
@@ -346,8 +346,7 @@ e.g.
     * Add RRs to an RRset
     * Delete and RRset, e.g. delete all of www.infoblox.com's A records
     * Delete all RRsets from a name, e.g. delete all records from www.infoblox.com
-
-Delete an RR from an RRset, e.g. delete www.infoblox.com's A record pointing to 10.0.0.1
+    * Delete an RR from an RRset, e.g. delete www.infoblox.com's A record pointing to 10.0.0.1
 
 
 
