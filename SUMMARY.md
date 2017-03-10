@@ -12,4 +12,6 @@
 * [SNMP](snmp.md)
 * [SSH/SFTP/SCP](sshsftpscp.md)
 * [DMZ](dmz.md)
+* [NAT](nat.md)
+* [DNS](dns.md)
 
