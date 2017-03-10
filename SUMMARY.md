@@ -24,6 +24,7 @@
   * [InfoSec](security/infosec.md)
     * [Concepts](security/infosec/concepts.md)
 * Linux
-  * RHEL
+  * [RHEL](rhel.md)
     * [Package Management](package-management.md)
+    * Common Commands
 
