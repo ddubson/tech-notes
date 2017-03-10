@@ -4,4 +4,5 @@
 * [nmap](tools.md)
 * Hardware
   * [Switches](switches.md)
+  * [Hubs](hubs.md)
 
