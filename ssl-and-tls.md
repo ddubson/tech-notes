@@ -120,7 +120,7 @@ where:
 
 * `SSLCompressed.fragment` is the compressed fragment data of data \(OR plaintext if no compression is used\)
 
-###  SSL Key Exchange
+### SSL Key Exchange
 
 * If **RSA** is used for key exchange,
   * Client generates a \`pre\_master\_secret\` and delivers it to the server enciphered using the Server’s public RSA key, whose authenticity is attested by the Client’s X.509 Certificate.
