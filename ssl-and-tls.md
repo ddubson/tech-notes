@@ -98,53 +98,38 @@ where:
 
 * `hash` is either MD5 or SHA
 * `||` denotes concatenation
-* `MAC_write_secret` is a shared secret 
+* `MAC_write_secret` is a shared secret
 
-    \* \`hash\` is either MD5 or SHA
+* `pad_1` is the byte \`36h\` repeated:
 
-    \* \`\|\|\` denotes concat.
+  * 48x for MD5
 
-    \* \`MAC\_write\_secret\` is a shared secret key
+  * 40x for SHA
 
-    \* \`pad\_1\` is the byte \`36h\` repeated:
+* `pad_2` is the byte 5Ch repeated:
 
-        \* 48x for MD5
+  * 48x for MD5
 
-        \* 40x for SHA
+  * 40x for SHA
 
-    \* \`pad\_2\` is the byte \`5Ch\` repeated:
+* `seq_num` is the 64-bit seq number for the SSL Record Protocol Message initialized to 0 and incremented up to 2^64^-1
 
-        \* 48x for MD5
+* `SSLCompressed.type` identifies the higher layer protocol this fragment.
 
-        \* 40x for SHA
+* `SSLCompressed.length` is the length of the compressed fragment
 
-    \* \`seq\_num\` is the 64-bit seq number for the SSL Record Protocol Message initialized to 0 and incremented up to 2^64 -1
+* `SSLCompressed.fragment` is the compressed fragment data of data \(OR plaintext if no compression is used\)
 
-    \* \`SSLCompressed.type\` identifies the higher layer protocol this fragment.
+###  SSL Key Exchange
 
-    \* \`SSLCompressed.length\` is the length of the compressed fragment.
-
-    \* \`SSLCompressed.fragment\` is the compressed fragment data of data \(OR plaintext if no compression is used\).
-
-### SSL Key Exchange
-
-\* If \*RSA\* is used for key exchange,
-
-    \* Client generates a \`pre\_master\_secret\` and delivers it to the server enciphered using the Server’s public RSA key, whose authenticity is attested by the Client’s X.509 Certificate.
-
-    \* The client and server process the \`pre\_master\_secret\`, deriving the keys used for the MAC and encipherment 
-
-\* If \*Diffie-Hellman\* is used for key exchange,
-
-```
-\* The client has three options:
-
-    \* /Fixed Diffie-Hellman Key Exchange/ - deliver an X.509 cert to the Server containing \(p,q\) and attest to the authenticity of the Client’s Diffie-Hellman parameters.
-
-    \* /Ephemeral Diffie-Hellman Key Exchange/ - the client creates one-time Diffie-Hellman parameters \(p,q\) which are delivered to the Client enciphered using the Server’s private RSA key, whose authenticity is attested to by the Client’s X.509 cert.
-
-    \* /Anonymous Diffie-Hellman Key Exchange/ - the Client creates one-time Diffie-Hellman parameters \(p,q\) which are delivered to the Client without any authentication.
-```
+* If **RSA** is used for key exchange,
+  * Client generates a \`pre\_master\_secret\` and delivers it to the server enciphered using the Server’s public RSA key, whose authenticity is attested by the Client’s X.509 Certificate.
+  * The client and server process the \`pre\_master\_secret\`, deriving the keys used for the MAC and encipherment 
+* If** Diffie-Hellman** is used for key exchange,
+  * The client has three options:
+    * **Fixed Diffie-Hellman Key Exchange** - deliver an X.509 cert to the Server containing \(p,q\) and attest to the authenticity of the Client’s Diffie-Hellman parameters.
+    * **Ephemeral Diffie-Hellman Key Exchange** - the client creates one-time Diffie-Hellman parameters \(p,q\) which are delivered to the Client enciphered using the Server’s private RSA key, whose authenticity is attested to by the Client’s X.509 cert.
+    * **Anonymous Diffie-Hellman Key Exchange** - the Client creates one-time Diffie-Hellman parameters \(p,q\) which are delivered to the Client without any authentication.
 
 
 
