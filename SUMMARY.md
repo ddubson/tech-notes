@@ -26,4 +26,9 @@
 * Linux
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
+* Malware Analysis
+  * [Static Analysis](static-analysis.md)
+  * [Dynamic Analysis](dynamic-analysis.md)
+
+
 
