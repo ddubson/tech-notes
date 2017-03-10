@@ -141,7 +141,7 @@ You need the node's domain name: the series of labels from the node to the root,
   * All name servers send queries and await responses
   * If they don’t receive a response within timeout, they retransmit the query - to another name server if possible.
 
-##  Authoritative / Recursive / Caching Name Servers types
+## Authoritative / Recursive / Caching Name Servers types
 
 * Authoritative NS - auth for one or more zones
   * main function is to answer non-recursive queries for data in its authoritative zones
@@ -149,7 +149,7 @@ You need the node's domain name: the series of labels from the node to the root,
 * Recursive NS - willing to handle recursive queries
   * also cache responses
   * sometimes called caching name servers
-  * if they aren't authoritative, they are caching-only name servers	
+  * if they aren't authoritative, they are caching-only name servers    
 
 ## Primary and Secondaries
 
@@ -160,7 +160,7 @@ You need the node's domain name: the series of labels from the node to the root,
   * Secondary checks primary to see if the serial \# is higher on the primary, zone transfer is requested if serial \# is higher on primary.
 * Primary and secondary system exists primarily to make it easy to set up several authoritative name servers for a zone and manage the zone data from one place.
 
-##  Recursive Resolution
+## Recursive Resolution
 
 * Forwarding
   * A recursive NS with a forwarder doesn't query the roots and follow referrals
@@ -182,14 +182,14 @@ You need the node's domain name: the series of labels from the node to the root,
 * In a zone data file, textual format \(presentation format or master file format\):
 
 ```
-owner-name	[TTL]	[class]	type	RDATA
+owner-name    [TTL]    [class]    type    RDATA
 ```
 
 e.g.
 
 ```
-www			3600	IN	A	50.19.85.84
-infoblox.com.	1h		IN      MX	10      mx1.infoblox.com
+www            3600    IN    A    50.19.85.84
+infoblox.com.    1h        IN      MX    10      mx1.infoblox.com
 ```
 
 * TTL - how long to cache the record
@@ -205,27 +205,149 @@ infoblox.com.	1h		IN      MX	10      mx1.infoblox.com
 
 Presentation format:
 
- `owner-name	[TTL]	IN	A	<32-bit IPv4 Address>`
+`owner-name    [TTL]    IN    A    <32-bit IPv4 Address>`
 
 e.g.
 
- `www	IN	A	50.19.85.84`
+`www    IN    A    50.19.85.84`
 
 ### ‘AAAA’ Record - IPv6 Address
 
 Presentation Format:
 
-`owner-name		[TTL]	IN	AAAA	<128-bit IPv6 Address>`
+`owner-name        [TTL]    IN    AAAA    <128-bit IPv6 Address>`
 
 e.g.
 
-`www	3600	IN	AAAA	2406::da00::ff00::3213::5554`
+`www    3600    IN    AAAA    2406::da00::ff00::3213::5554`
 
 * If a domain name has both A and AAAA records attached, the one used depends on the clients
   * Some clients prefer IPv6 over IPv4, others the reverse
   * Some clients will look up both and try to connect over both if available
     * Using the one that connects first
 * The Algorithm is known as Happy Eyeballs
+
+### ‘PTR’ Record - Pointer
+
+* Chiefly used for reverse mapping
+  * Mapping from an IP address to a Domain name
+  * A and AAAA records are only useful for forward mapping
+* Two special domains in the namespace handle reverse mapping
+  * In-addr.arpa for IPv4
+    * Labels of a domain name of IPv4 addr in reverse addr
+  * Ip6.arpa for IPv6
+* Labels are the hex digits of an IPv6 addr in reverse order
+
+![](/assets/dns-7.png)
+
+* Reverse order is necessary to make delegation sensible.
+* Presentation Format
+
+	`owner-name		[TTL]	IN	PTR		<domain-name>`
+
+###  ‘CNAME’ Record - Alias
+
+* Presentation format:
+
+`owner-name		[TTL]	IN	CNAME	<domain-name>`
+
+e.g.
+
+`alias		3600	IN	CNAME	official.infoblox.com`
+
+* CNAME records are singletons - no other records can be attached if one exists.
+* Queries for a record type other than CNAME wouldn’t match the CNAME
+* So authoritative name servers also check whether the domain name in the query is an alias by looking for CNAME records.
+* Recursive name servers that receive CNAME records as a response restart the query
+  * Replacing the alias with the c name
+* So don’t' CNAME records
+
+### ‘MX’ Record - Mail Server
+
+* Presentation format:
+
+`owner-name		[TTL]	IN 		MX		<16-bit preference>	<mail exchanger>`
+
+e.g.
+
+`@		IN	MX	10 mx1.infoblox.com`
+
+* MX records list the mail exchangers for an email destination
+
+### ’SRV’ Record - Service
+
+* Presentation format:
+
+`owner-name		[TTL]	IN	SRV		<16-bit priority>	<16-bit weight>		<port>	<target>`
+
+e.g. 
+
+```
+_http._tcp.www		IN	SRV		0	0	80	www1
+_http._tcp.www		IN	SRV		0	0	80	www2
+```
+
+### ‘TXT’ Record
+
+* Used to attach some text to a DNS entry
+* Allows to associate free format text with a domain name
+* Presentation format:
+
+`owner-name		[TTL]	IN	TXT		“string” [“string” …]`
+
+e.g.
+
+`@	IN	TXT		“infoblox.com.	IN	TXT “v=spf1 mx a”`
+
+### ‘SOA’ Record - Start of Authority \(Infrastructure\)
+
+* Presentation format:
+
+`owner-name		[TTL]	IN SOA	<mname>	<rname> <32-bit serial number>`
+
+e.g.
+
+`IN		SOA		ns1.infoblox.com.	dns.infoblox.com.	(2015060600, 1h, 15m, 30d, 10m)`
+
+### ’NS’ Record - Namespace \(Infrastructure\)
+
+* Presentation format:
+
+`owner-name		[TTL]	IN	NS	<name-server>`
+
+e.g.
+
+```
+@		IN	NS	ns1.infoblox.com.
+		IN	NS	ns2.infoblox.com.
+		IN	NS	ns3.infoblox.com.
+		IN	NS	ns4.infoblox.com.
+```
+
+## Dynamic Update
+
+* OG modifying zone data required editing a zone data file and reloading a zone
+  * required admin intervention or stream editing
+* \#rfcs/2136\# - published in 1997, codified a mechanism to do this, called dynamic update
+* Dynamic updates are carried in DNS messages
+  * OPCODE = UPDATE
+  * Sections are redefined:
+    * Zone
+    * Prerequisite
+    * Update
+  * Prerequisites are optional conditions which if included must be true for the subsequent update to be processed
+  * 5 types:
+    * RRset exists \(value indp\), e.g. www.infoblox.com has a A record
+    * RRset exists \(value dep\), e.g. www.infoblox.com has the A record 10.0.0.1
+    * RRset does not exists, e.g. www.infoblox.com has no A record
+    * Name is in use, e.g. www.infoblox.com owns at least one record
+    * Name is not in use, e.g. www.infoblox.com doesn't own any records
+  * 4 types of update
+    * Add RRs to an RRset
+    * Delete and RRset, e.g. delete all of www.infoblox.com's A records
+    * Delete all RRsets from a name, e.g. delete all records from www.infoblox.com
+
+Delete an RR from an RRset, e.g. delete www.infoblox.com's A record pointing to 10.0.0.1
 
 
 
