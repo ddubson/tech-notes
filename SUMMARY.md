@@ -14,4 +14,6 @@
 * [DMZ](dmz.md)
 * [NAT](nat.md)
 * [DNS](dns.md)
+* [Traffic Classifications](traffic-classifications.md)
+* [Ethernet](ethernet.md)
 
