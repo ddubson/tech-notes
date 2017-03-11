@@ -23,12 +23,12 @@
 * [Security](security.md)
   * [InfoSec](security/infosec.md)
     * [Concepts](security/infosec/concepts.md)
-* Linux
+* [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
-* Malware Analysis
+    * [Create Partition from Free Space](create-partition-from-free-space.md)
+* [Malware Analysis](malware-analysis.md)
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
-
-
+* [x86 Assembly](x86-assembly.md)
 
