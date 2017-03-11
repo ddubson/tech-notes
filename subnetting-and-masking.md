@@ -45,5 +45,17 @@
   * 3rd subnet will be 128-191 -&gt; masked by 255.255.255.128
   * 4th subnet will be 192-255 -&gt; masked by 255.255.255.192
 
+---
+
+* Divide up networks into logical separate subnetworks \(subnets\).
+* Subnetting takes the default address classes — A, B, C and can divide up those networks based upon the number of bit in the /subnet mask/ - used to tell a host which part of its IP address represents the network ID and which part reps the host ID
+* e.g. In an ordinary class C address, the default mask is 255.255.255.0 \(24-bit\).
+  * With an IP address of 192.121.14.7, we know the host is on 192.121.14.0 network, and there are 254 possible host addresses for the network \(0 is reserved for the network ID and 255 is reserved for cast\)
+  * If we were to subnet, separating the network into two, we would have a new subnet mask of 255.255.255.128 \(25-bit mask\) - this gives us two new network IDs - 192.121.14.0 and 192.121.14.128 - each network has at most 126 hosts![](/assets/subnet-3.png)
+
+---
+
+ 
+
 
 
