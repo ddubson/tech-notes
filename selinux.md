@@ -1,6 +1,6 @@
 # SELinux
 
-https://wiki.centos.org/HowTos/SELinux
+[https://wiki.centos.org/HowTos/SELinux](https://wiki.centos.org/HowTos/SELinux)
 
 * Kernel-level module to enforce access permissions
 * Follows the model of least privilege
@@ -44,7 +44,9 @@ The output is based on 'user:role:type:mls
 
 The log files are located at \`/var/log/audit/audit.log\` \(writted via auditd \(Linux Auditing System\)\)
 
-	• If the auditd daemon is not started, the messages are written into \`/var/log/messages\`.
+```
+If the auditd daemon is not started, the messages are written into /var/log/messages.
+```
 
 SELinux messages are labeled with 'AVC' keyword so they can be easily filtered.
 
