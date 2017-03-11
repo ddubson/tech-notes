@@ -32,5 +32,6 @@
 * [Malware Analysis](malware-analysis.md)
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
+  * [Running Malware](running-malware.md)
 * [x86 Assembly](x86-assembly.md)
 
