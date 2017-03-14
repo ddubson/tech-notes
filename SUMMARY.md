@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+* [Angular 2](angular-2.md)
+  * [Creating a Project](angular-2/creating-a-project.md)
+  * [Running Application Locally](angular-2/running-application-locally.md)
 * [Networking](networking.md)
   * [Hardware](hardware.md)
     * [Switches](switches.md)
@@ -37,6 +40,4 @@
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
 * [x86 Assembly](x86-assembly.md)
-* [Angular 2](angular-2.md)
-  * [Creating a Project](angular-2/creating-a-project.md)
 
