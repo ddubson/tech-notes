@@ -1,4 +1,4 @@
-# Creating a Project
+# Creating an Angular 2 Project
 
 Download and install latest Node/NPM:
 
