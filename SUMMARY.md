@@ -37,4 +37,6 @@
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
 * [x86 Assembly](x86-assembly.md)
+* [Angular 2](angular-2.md)
+  * [Creating a Project](angular-2/creating-a-project.md)
 
