@@ -13,7 +13,7 @@ choco install nodejs
 In your workspace directory, run:
 
 ```
-npm install -g @angular/cli
+npm install -g @angular/cli@latest
 ng new [project-name]
 ```
 
