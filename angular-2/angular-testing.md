@@ -1,8 +1,28 @@
 # Angular 2 Testing
 
-## Component Testing Example
+## Setting Up Angular with Jasmine
 
-Before the test suite runs:
+Create the suite
+
+```
+import "babel-polyfill";
+import "reflect-metadata";
+import "zone.js";
+import "zone.js/dist/long-stack-trace-zone";
+import "zone.js/dist/async-test";
+import "zone.js/dist/fake-async-test";
+import "zone.js/dist/sync-test";
+import "zone.js/dist/proxy";
+import "zone.js/dist/jasmine-patch";
+
+
+require('./TestBedInit.js');
+
+var requireTest = require.context('.', true, /\.test\.(js|ts)$/);
+requireTest.keys().forEach(requireTest);
+```
+
+Before the test suite runs \(TestBedInit.js\):
 
 ```typescript
 import {TestBed} from "@angular/core/testing";
@@ -10,6 +30,8 @@ import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angul
 
 TestBed.initTestEnvironment( BrowserDynamicTestingModule, platformBrowserDynamicTesting() );
 ```
+
+## Component Test Example
 
 The following tests a Form input and submission, and mocks a service that triggers an action based on the submit:
 
