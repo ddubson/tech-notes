@@ -4,7 +4,7 @@
 
 Create the suite
 
-```
+```typescript
 import "babel-polyfill";
 import "reflect-metadata";
 import "zone.js";
