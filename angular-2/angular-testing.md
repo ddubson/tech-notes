@@ -4,7 +4,7 @@
 
 Before the test suite runs:
 
-```
+```typescript
 import {TestBed} from "@angular/core/testing";
 import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angular/platform-browser-dynamic/testing";
 
@@ -48,14 +48,14 @@ describe("Component: SomeForm", () => {
       // In the 'input' text field, set it to 'Hello'
       const inputCtrl = fixture.debugElement.query(By.css("input")).nativeElement;
       inputCtrl.value= "Hello";
-      
+
       // Dispatch the event for the 'input' text
       inputCtrl.dispatchEvent(new Event("input"));
-      
+
       // Important! make sure Angular is aware of the form changes.
       fixture.detectChanges();
 
-    
+
       fixture.debugElement.query(By.css("form")).triggerEventHandler("submit", null);
       fixture.detectChanges();
 
