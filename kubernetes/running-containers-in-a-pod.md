@@ -10,13 +10,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-	name: nginx
+    name: nginx
 spec:
-	containers:
-		- name: nginx
-		  image: nginx:1.7.9
-		  ports:
-			- containerPort: 80
+    containers:
+        - name: nginx
+          image: nginx:1.7.9
+          ports:
+            - containerPort: 80
 ```
 
 Pod Commands
@@ -52,15 +52,15 @@ kubectl port-forward nginx :80
 apiVersion: v1
 kind: Pod
 metadata:
-	name: nginx
+    name: nginx
   labels:
-		app: nginx
+        app: nginx
 spec:
-	containers:
-		- name: nginx
-		  image: nginx:1.7.9
-		  ports:
-			- containerPort: 80
+    containers:
+        - name: nginx
+          image: nginx:1.7.9
+          ports:
+            - containerPort: 80
 ```
 
 * `kubectl get pods -l app=nginx` -&gt; get all pods that are labeled with k-v app=nginx
@@ -74,19 +74,19 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-	name: nginx-deployment-prod
+    name: nginx-deployment-prod
 spec:
-	replicas: 1
-	template:
-		metadata:
-  			labels:
-				app: nginx-deployment-prod
-		spec:
-	    	containers:
-				- name: nginx-deployment-prod
-		  		  image: nginx:1.7.9
-		  		  ports:
-				  	- containerPort: 80
+    replicas: 1
+    template:
+        metadata:
+              labels:
+                app: nginx-deployment-prod
+        spec:
+            containers:
+                - name: nginx-deployment-prod
+                    image: nginx:1.7.9
+                    ports:
+                      - containerPort: 80
 ```
 
 * `kubectl create -f nginx-deployment-prod.yaml`
@@ -98,41 +98,41 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-	name: nginx-deployment-dev
+    name: nginx-deployment-dev
 spec:
-	replicas: 1
-	template:
-		metadata:
-  			labels:
-				app: nginx-deployment-dev
-		spec:
-	    	containers:
-				- name: nginx-deployment-dev
-		  		  image: nginx:1.7.9
-		  		  ports:
-				     - containerPort: 80
+    replicas: 1
+    template:
+        metadata:
+              labels:
+                app: nginx-deployment-dev
+        spec:
+            containers:
+                - name: nginx-deployment-dev
+                    image: nginx:1.7.9
+                    ports:
+                     - containerPort: 80
 ```
 
 * By using a deployment type, we can update pods by applying an updated deployment.
 * Upgrade nginx from 1.7.9 to 1.8.0
 
-```
+```yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-	name: nginx-deployment-dev
+    name: nginx-deployment-dev
 spec:
-	replicas: 1
-	template:
-		metadata:
-  			labels:
-				app: nginx-deployment-dev
-		spec:
-	    	containers:
-				- name: nginx-deployment-dev
-		  		  image: nginx:1.8
-		  		  ports:
-				- containerPort: 80 
+    replicas: 1
+    template:
+        metadata:
+              labels:
+                app: nginx-deployment-dev
+        spec:
+            containers:
+                - name: nginx-deployment-dev
+                    image: nginx:1.8
+                    ports:
+                - containerPort: 80
 ```
 
 * `kubectl apply -f nginx-deployment-dev-update.yaml` -&gt; applies changes from the new configuration
@@ -146,28 +146,32 @@ spec:
 apiVersion: v1
 kind: ReplicationController
 metadata:
-	name: nginx-www
+    name: nginx-www
 spec:
-	replicas: 3
-	selector:
-		app: nginx
-	template:
-		metadata:
-			name: nginx
-			labels:
-				app: nginx
-		spec:
-			containers:
-				- name: nginx
-			      image: nginx
-				  ports:
-				     - containerPort: 80
+    replicas: 3
+    selector:
+        app: nginx
+    template:
+        metadata:
+            name: nginx
+            labels:
+                app: nginx
+        spec:
+            containers:
+                - name: nginx
+                  image: nginx
+                  ports:
+                     - containerPort: 80
 ```
 
 * 1 pod of each type on each minion \(given 3 minions\)
-* \`kubectl create -f nginx-multi-label.yaml\`
-* \`kubectl create describe replication controller\`
-* \`kubectl get services\`
+
+```
+kubectl create -f nginx-multi-label.yaml
+kubectl create describe replication controller
+kubectl get services
+```
+
 * If a pod is deleted, replication controller spins up another to have the same consistent state \(3 pods\)
 * \`kubectl delete replicationcontroller nginx-www\` - delete rep controller by name
 
@@ -179,19 +183,24 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-	name: nginx-service
+    name: nginx-service
 spec:
-	ports:
-		- port: 8000
-		  targetPort: 80
-		  protocol: TCP
-	selector:
-		app: nginx
+    ports:
+        - port: 8000
+          targetPort: 80
+          protocol: TCP
+    selector:
+        app: nginx
 ```
 
--&gt; Run \`kubectl create -f nginx-service.yml\`
+Run 
 
--&gt; Run \`kubectl get services\` ![](/assets/kube-1.png)Now all the minions are round-robin load balanced with a single ip \(CLUSTERIP\)
+```
+kubectl create -f nginx-service.yml
+kubectl get services
+```
+
+![](/assets/kube-1.png)Now all the minions are round-robin load balanced with a single ip \(CLUSTERIP\)
 
 -&gt; Run \`kubectl describe service nginx-service\`![](/assets/kube-2.png)
 
@@ -199,13 +208,13 @@ spec:
 
 * How to create a temporary pod without a yml file:
 
-* \`kubectl run mysample --image=latest123/apache\` -&gt; creates a deployment 
+```
+kubectl run mysample --image=latest123/apache # creates a deployment
+kubectl delete deployment mysample # delete deployment created
+kubectl run myreplicas —image=latest123/apache —replicas=2 —labels=app=myapache,version=1.0 # create a pod with replica factor of 2
+```
 
-* \`kubectl delete deployment mysample\` -&gt; delete deployment created
-
-* \`kubectl run myreplicas —image=latest123/apache —replicas=2 —labels=app=myapache,version=1.0\` -&gt; create a pod with replica factor of 2
-
-## Interacting with Pod containers
+### Interacting with Pod containers
 
 * \`kubectl exec myapache date\` -&gt; run ‘date’ command in pod \`myapache\`
 
