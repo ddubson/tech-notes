@@ -11,7 +11,7 @@ import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angul
 TestBed.initTestEnvironment( BrowserDynamicTestingModule, platformBrowserDynamicTesting() );
 ```
 
-The following tests an Form input and submission, and mocks a service that triggers an action based on the submit:
+The following tests a Form input and submission, and mocks a service that triggers an action based on the submit:
 
 ```typescript
 import {TestBed, ComponentFixture, ComponentFixtureAutoDetect} from "@angular/core/testing";
