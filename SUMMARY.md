@@ -4,6 +4,7 @@
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
+  * [Angular CLI](angular-2/angular-cli.md)
 * [Networking](networking.md)
   * [Hardware](hardware.md)
     * [Switches](switches.md)
