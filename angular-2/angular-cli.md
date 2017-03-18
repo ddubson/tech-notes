@@ -27,10 +27,8 @@ ng g c [component-name] --flat
 #### Remove an existing component
 
 ```
-ng destroy [component-name]
+ng destroy component [component-name]
 ```
-
-
 
 ---
 
