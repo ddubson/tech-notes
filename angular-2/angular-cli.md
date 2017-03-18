@@ -1,8 +1,8 @@
 # Angular CLI Commands
 
-## Component
+## Components
 
-Create a new component:
+#### Create a new component
 
 ```
 ng generate component [component-name]
@@ -21,6 +21,16 @@ Create a component in the current working directory:
 ```
 ng g c [component-name] --flat
 ```
+
+---
+
+#### Remove an existing component
+
+```
+ng destroy [component-name]
+```
+
+
 
 ---
 
