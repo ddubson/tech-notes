@@ -55,4 +55,6 @@
   * [Processor Registers](x86-assembly/processor-registers.md)
 * [Computer Organization](computer-organization.md)
   * [Memory Hierarchy](computer-organization/memory-hierarchy.md)
+* Operating Systems
+  * [Processes](processes.md)
 
