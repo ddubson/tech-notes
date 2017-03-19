@@ -41,6 +41,7 @@
     * [Package Management](package-management.md)
     * [Create Partition from Free Space](create-partition-from-free-space.md)
     * [SELinux](selinux.md)
+    * [CPU and Memory](cpu-and-memory.md)
   * [tar, star, gzip, gunzip](tar-star-gzip-gunzip.md)
   * [Logging](logging.md)
 * [Malware Analysis](malware-analysis.md)
