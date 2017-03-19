@@ -9,17 +9,19 @@
 * `/etc/systemd/journald.conf` : configuration for journals
 * `/etc/rsyslog.conf` : configuration of the loggers
 
-    # last 10 lines
-    journalctl -n
+```bash
+# last 10 lines
+journalctl -n
 
-    #` -> explain + last 10 lines
-    journalctl -xn
+# explain + last 10 lines
+journalctl -xn
 
-    # last 10 lines + listen for new messages
-    journalctl -f
+# last 10 lines + listen for new messages
+journalctl -f
 
-    # view specific units like httpd
-    journalctl _SYSTEM_UNIT=[units]
+# view specific units like httpd
+journalctl _SYSTEM_UNIT=[units]
+```
 
 ## systemd-analyze
 
@@ -27,13 +29,15 @@ information about boot process
 
 `systemd-analyze` or `systemd-analyze blame`
 
-## syslogd	
+## syslogd
 
 • In Linux, the \*syslogd\* daemon sits in the background and receives log information from various systems and user processes.
 
 • The location of logs in Linux \(Fedora 13\):
 
-	○ `/var/log/` - contains logs for all common processes
+```
+/var/log/ - contains logs for all common processes
+```
 
 Common log files of use to hackers:
 
