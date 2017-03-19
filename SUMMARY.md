@@ -41,6 +41,7 @@
     * [Package Management](package-management.md)
     * [Create Partition from Free Space](create-partition-from-free-space.md)
     * [SELinux](selinux.md)
+  * [tar, star, gzip, gunzip](tar-star-gzip-gunzip.md)
 * [Malware Analysis](malware-analysis.md)
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
