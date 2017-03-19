@@ -35,6 +35,7 @@
   * [InfoSec](security/infosec.md)
     * [Concepts](security/infosec/concepts.md)
     * [Governance](security/infosec/governance.md)
+    * [Risk Management](security/infosec/risk-management.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
