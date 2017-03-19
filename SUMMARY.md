@@ -46,6 +46,7 @@
     * [CPU and Memory](cpu-and-memory.md)
   * [tar, star, gzip, gunzip](tar-star-gzip-gunzip.md)
   * [Logging](logging.md)
+  * [File and Directory Permissions](file-and-directory-permissions.md)
 * [Malware Analysis](malware-analysis.md)
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
