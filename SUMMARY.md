@@ -27,6 +27,7 @@
   * [Ethernet](ethernet.md)
   * [Fibre Channel](fibre-channel.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
+  * DHCP
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
