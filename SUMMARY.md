@@ -53,4 +53,6 @@
   * [Running Malware](running-malware.md)
 * [Intel x86 Assembly](x86-assembly.md)
   * [Processor Registers](x86-assembly/processor-registers.md)
+* [Computer Organization](computer-organization.md)
+  * [Memory Hierarchy](computer-organization/memory-hierarchy.md)
 
