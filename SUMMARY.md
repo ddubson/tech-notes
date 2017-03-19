@@ -8,6 +8,7 @@
   * [Angular Testing](angular-2/angular-testing.md)
   * [Directives](angular-2/directives.md)
 * [Networking](networking.md)
+  * [Concepts](concepts.md)
   * [Hardware](hardware.md)
     * [Switches](switches.md)
     * [Hubs](hubs.md)
