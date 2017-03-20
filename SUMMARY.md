@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [TODOs](todos.md)
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
@@ -57,6 +58,5 @@
   * [Memory Hierarchy](computer-organization/memory-hierarchy.md)
   * [Byte Ordering](computer-organization/byte-ordering.md)
   * [Typical System Design](computer-organization/typical-system-design.md)
-* Operating Systems
-  * [Processes](processes.md)
+* TODOs
 
