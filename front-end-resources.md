@@ -15,5 +15,13 @@
 * [Redux](http://redux.js.org/)
 * [Mobx](https://github.com/mobxjs/mobx)
 
+#### Graphing and Visualization Frameworks
+
+* [D3.js](https://d3js.org/)
+
+#### Test Frameworks
+
+* [Jasmine - BDD](https://jasmine.github.io/)
+
 
 
