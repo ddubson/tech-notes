@@ -58,5 +58,6 @@
   * [Memory Hierarchy](computer-organization/memory-hierarchy.md)
   * [Byte Ordering](computer-organization/byte-ordering.md)
   * [Typical System Design](computer-organization/typical-system-design.md)
-* TODOs
+
+
 
