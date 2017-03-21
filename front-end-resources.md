@@ -1,0 +1,19 @@
+# Front-End Resources
+
+#### Web Frameworks
+
+* [Angular 2](https://angular.io/)
+* [React](https://facebook.github.io/react/)
+
+#### Native Frameworks
+
+* [React Native](https://facebook.github.io/react-native/)
+* [Electron](https://electron.atom.io/)
+
+#### State Management Frameworks
+
+* [Redux](http://redux.js.org/)
+* [Mobx](https://github.com/mobxjs/mobx)
+
+
+

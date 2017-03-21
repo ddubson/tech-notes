@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [TODOs](todos.md)
+* [Front-End Resources](front-end-resources.md)
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
@@ -54,10 +55,5 @@
   * [Running Malware](running-malware.md)
 * [Intel x86 Assembly](x86-assembly.md)
   * [Processor Registers](x86-assembly/processor-registers.md)
-* [Computer Organization](computer-organization.md)
-  * [Memory Hierarchy](computer-organization/memory-hierarchy.md)
-  * [Byte Ordering](computer-organization/byte-ordering.md)
-  * [Typical System Design](computer-organization/typical-system-design.md)
-
-
+* Front-End Resources
 
