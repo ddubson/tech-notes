@@ -15,6 +15,10 @@
 * [Redux](http://redux.js.org/)
 * [Mobx](https://github.com/mobxjs/mobx)
 
+#### Reactive Libraries
+
+* [rxjs](https://github.com/ReactiveX/rxjs)
+
 #### Graphing and Visualization Frameworks
 
 * [D3.js](https://d3js.org/)
