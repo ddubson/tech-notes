@@ -54,5 +54,8 @@
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
-* [Back-End Resources](back-end-resources.md)
+
+
+
+
 
