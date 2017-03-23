@@ -46,5 +46,21 @@ or shorthand
 ng g cl [model-name]
 ```
 
+## Directives
+
+Create a new directive
+
+```
+ng generate directive [directive-name]
+```
+
+or shorthand
+
+```
+ng g d [directive-name]
+```
+
+
+
 
 

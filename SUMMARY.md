@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [TODOs](todos.md)
 * [Front-End Resources](front-end-resources.md)
+* [Back-End Resources](back-end-resources.md)
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
@@ -53,8 +54,5 @@
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
-* [Intel x86 Assembly](x86-assembly.md)
-  * [Processor Registers](x86-assembly/processor-registers.md)
-
-
+* [Back-End Resources](back-end-resources.md)
 
