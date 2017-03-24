@@ -54,10 +54,12 @@
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
-* [Intel x86 Assembly](/x86-assembly)
+* Intel x86 Assembly
   * [Processor Registers](/x86-assembly/processor-registers.md)
 * [Computer Organization](/computer-organization.md)
   * [Typical System Design](/computer-organization/typical-system-design.md)
   * [Memory Hierarchy](/computer-organization/memory-hierarchy.md)
   * [Byte Ordering](/computer-organization/byte-ordering.md)
+
+
 
