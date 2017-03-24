@@ -56,12 +56,13 @@
   * [Running Malware](running-malware.md)
 * [x86-assembly](x86-assembly)
   * [Processor Registers](/x86-assembly/processor-registers.md)
-* [computer-organization](computer-organization)
-  * [computer-organization/typical-system-design.md](computer-organization/typical-system-design.md)
+* [C](computer-organization)omputer Organization
 
-  * [computer-organization/memory-hierarchy.md](computer-organization/memory-hierarchy.md)
+  * [Typical System Design](/computer-organization/typical-system-design.md)
 
-  * [computer-organization/byte-ordering.md](computer-organization/byte-ordering.md)
+  * [Memory Hierarchy](/computer-organization/memory-hierarchy.md)
+
+  * [Byte Ordering](/computer-organization/byte-ordering.md)
 
 
 
