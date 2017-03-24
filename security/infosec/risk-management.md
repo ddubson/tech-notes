@@ -5,10 +5,22 @@
 Risk consists of: Assets, vulnerabilities, threats, threat agents, likelihood, and impact.
 
 * Asset - anything of value to an organization
-* Vulnerability -security weakness in an asset
-* Threat - event or occurrence that can cause damage or harm to people, equipment, facilities, or data.
+* Vulnerability - weakness in a system or process
+  * Implies the absence of a countermeasure
+  * Vulnerabilities are internal and more easily managed.
+* Threat - the possibility that vulnerability might be exploited which will introduce loss
+  * Internal threats are somewhat controllable
+  * External threats are much less controllable
   * Threat exploits a vulnerability
-* Threat Agent - something that initiates or causes a threat to occur
+* Threat Agent - active ingredient that causes loss, something that initiates or causes a threat to occur
+* Risk - produced when vulnerability and related threat are present
+  * Quantified by combo of likelihood and impact
+  * If there is no threat, or no vulnerability, there is no risk
+* Exposure - reduce the attack surface or exploitable area
+* Loss - compromise of the CIA, negatively affecting profits
+* Countermeasure - control that mitigates or eliminates risk
+  * Reduces vulnerability, likelihood, impact
+  * Must be cost justified - applied in multiple layers \(must be lower than the value of the asset\)
 
 ![](/assets/risk-1.png)
 
