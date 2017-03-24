@@ -54,7 +54,7 @@
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
-* [x86-assembly](x86-assembly)
+* [Intel x86 Assembly](/x86-assembly)
   * [Processor Registers](/x86-assembly/processor-registers.md)
 * [Computer Organization](/computer-organization.md)
 
