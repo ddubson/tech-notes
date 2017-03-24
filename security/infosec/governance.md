@@ -75,8 +75,6 @@ Management is busy managing; keeping their vision on business
   * Remedial training for violators
 * Provide oversight with 3rd party regarding compliance.
 
-
-
 ## Laws and Regulations
 
 * Highest levels of governance are the legal sources of governance
@@ -86,6 +84,10 @@ Management is busy managing; keeping their vision on business
 
 ## Organizational Governance
 
+* Documented/formalized through org policies:
+  * * policies and standards - high level
+    * procedures and baselines - details
+    * guidelines - recommendations
 * Comes from within org
 * Typically created to establish orgs commitment to the law
 * Describes requirements levied on personnel relating security behavior and mandates how the organization will comply with laws.
@@ -103,6 +105,26 @@ Management is busy managing; keeping their vision on business
     * documents that describe alternative methods of implementing a requirement or procedure; may present best practices or optional information that is encouraged to be used.
 
 ![](/assets/gov-1.png)
+
+Based on recognized frameworks, recommendations, and industry/vendor best practices
+
+* * ISO/IEC
+  * NIST
+  * GAISP
+  * Vendors
+  * COSO
+  * COBIT
+  * Zachman
+  * SABSA
+
+Applicable laws / regulations
+
+* * HIPAA
+  * GLBA
+  * SOX
+  * PCI DSS
+
+
 
 ## Security Policies
 
