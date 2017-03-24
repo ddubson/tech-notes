@@ -41,6 +41,7 @@
     * [Concepts](security/infosec/concepts.md)
     * [Governance](security/infosec/governance.md)
     * [Risk Management](security/infosec/risk-management.md)
+    * [Threats](security/infosec/threats.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
@@ -62,6 +63,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
