@@ -31,7 +31,7 @@
   * [Ethernet](ethernet.md)
   * [Fibre Channel](fibre-channel.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
-  * DHCP
+  * [DHCP](dhcp.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
@@ -57,12 +57,7 @@
 * [Intel x86 Assembly](/x86-assembly)
   * [Processor Registers](/x86-assembly/processor-registers.md)
 * [Computer Organization](/computer-organization.md)
-
   * [Typical System Design](/computer-organization/typical-system-design.md)
-
   * [Memory Hierarchy](/computer-organization/memory-hierarchy.md)
-
   * [Byte Ordering](/computer-organization/byte-ordering.md)
-
-
 
