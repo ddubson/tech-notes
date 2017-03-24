@@ -56,7 +56,7 @@
   * [Running Malware](running-malware.md)
 * [x86-assembly](x86-assembly)
   * [Processor Registers](/x86-assembly/processor-registers.md)
-* [C](computer-organization)omputer Organization
+* [Computer Organization](/computer-organization.md)
 
   * [Typical System Design](/computer-organization/typical-system-design.md)
 
