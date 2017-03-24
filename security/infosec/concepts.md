@@ -1,5 +1,48 @@
-# CIA Triad - Confidentiality, Integrity, Availability
+# Concepts - CIA Triad - Confidentiality, Integrity, Availability
 
+* Information = value
+  * Any tangible asset has value
+  * “sensitive” information means valuable information
+  * Any compromise of an asset means the enterprise will lose money
+  * **Tangible Assets** = physical
+  * * servers, HDDs, data centers, optical disks
+  * **Intangible Assets **- software, IP, trade secrets
+  * * Info stored on computers, dos, source code, data files, Personally Identifiable Information \(PII\)
+  * Valuable Info Assets
+  * * Value of an asset changes over time
+    * May become more or less valuable over time
+    * The protection required for an asset is directly related to the value of an asset
+    * Don’t over protect \(high cost\), or under protect \(high risk\) asset
+    * The protection must be cost justified
+    * What are valuable info assets of an enterprise?
+    * * IP - trade secrets, know how
+      * financials
+      * marketing info
+      * R&D prog., status, direction
+      * Raw material status, vendor list
+      * Customer lists
+      * Personally Identifiable Information \(PII\)
+* What is PII?
+  * Usually a name +:
+
+  * * Address
+    * Phone
+    * Birth
+    * Age
+    * Height
+    * Eye color
+    * Gender
+    * Marital status
+    * Med info
+    * etc.
+  * Additional info increases risk:
+  * A Credit Card without a name is not PII
+  * A person’s name alone isn’t PII
+  * * Financial account \#
+    * Soc Sec \#
+    * Driver’s License
+    * Employee \#
+    * Passport \#
 * To protect Valuable Info Assets
 * **Confidentiality **
   * Keeping secrets secret
