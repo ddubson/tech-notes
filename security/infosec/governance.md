@@ -91,60 +91,80 @@ Management is busy managing; keeping their vision on business
 * Comes from within org
 * Typically created to establish orgs commitment to the law
 * Describes requirements levied on personnel relating security behavior and mandates how the organization will comply with laws.
-* Consists of several different instruments:
-  * **Policies **- 
-    * directive in nature and inform organizational personnel of requirements they must adhere to.
-    * Do not describe how a requirement is to be implemented.
-    * Policies - statements of practice, user behavior - who, what, why - high level 1 or 2 sentences.
-      * System specific - mid or low level \(detailed\), tech
-      * Issue specific - mid or low level \(detailed\), users or tech
-      * Contain the following elements:
-      * * Purpose
-        * Scope
-        * Background - why the doc is required, additional resources, etc.
-        * Responsibility - responsible for enforcing the policy
-        * Policy Statement - declaration of whats to accomplish
-        * Action - byproduct of the policy statement - what is required to
-           be done
-        * Related documents
-        * Exceptions
-        * Revision history
-        * Approvals- senior mgmt approval
-      * Are legally binding contracts
-      * Should be based: established frameworks, models, standards, and best practices
-      * Should be reviewed by legal department to confirm legal compliance
-      * Exceptions to policy must be approved and documented.
-      * Must be reviewed and updated regularly - annually after major changes
-      * Must follow formal change control procedure
-      * Training must be provided to employees after changes.
-      * Collectively and comprehensively describe
-      * * Vision, Ethics, and Governance
-        * Applicable Legal and regulatory compliance
-        * The Security program
-        * The risk management program
-        * Data classification and protection
-        * Incident response program
-        * Disaster recovery and business continuity planning
-        * Change control / configuration management
-        * Roles and responsibilities
-        * Financial and Account procedures
-        * Monitoring and Auditing
-        * Employee hiring, working, termination process
-        * Employee privacy requirements and expectations
-        * Security Awareness Training and enforcement
-        * Acceptable Use
-        * Prohibited activities
-        * Third party governance
-        * Sanctions - penalties for violations
-        * Exceptions
-  * **Standards**
-    * document that dictates a level of performance or functionality for a requirement.
-    * NIST has produced a number of standards relating to security
-  * **Procedures**
-    * complete the 'how' portion of compliance by discussing how personnel must meet the requirements of a policy
-  * **Guidelines**
-    * Usually optional
-    * documents that describe alternative methods of implementing a requirement or procedure; may present best practices or optional information that is encouraged to be used.
+* Consists of several different instruments
+
+### Policies 
+
+* directive in nature and inform organizational personnel of requirements they must adhere to.
+* Do not describe how a requirement is to be implemented.
+* Policies - statements of practice, user behavior - who, what, why - high level 1 or 2 sentences.
+  * System specific - mid or low level \(detailed\), tech
+  * Issue specific - mid or low level \(detailed\), users or tech
+  * Contain the following elements:
+  * * Purpose
+    * Scope
+    * Background - why the doc is required, additional resources, etc.
+    * Responsibility - responsible for enforcing the policy
+    * Policy Statement - declaration of whats to accomplish
+    * Action - byproduct of the policy statement - what is required to
+       be done
+    * Related documents
+    * Exceptions
+    * Revision history
+    * Approvals- senior mgmt approval
+  * Are legally binding contracts
+  * Should be based: established frameworks, models, standards, and best practices
+  * Should be reviewed by legal department to confirm legal compliance
+  * Exceptions to policy must be approved and documented.
+  * Must be reviewed and updated regularly - annually after major changes
+  * Must follow formal change control procedure
+  * Training must be provided to employees after changes.
+  * Collectively and comprehensively describe
+  * * Vision, Ethics, and Governance
+    * Applicable Legal and regulatory compliance
+    * The Security program
+    * The risk management program
+    * Data classification and protection
+    * Incident response program
+    * Disaster recovery and business continuity planning
+    * Change control / configuration management
+    * Roles and responsibilities
+    * Financial and Account procedures
+    * Monitoring and Auditing
+    * Employee hiring, working, termination process
+    * Employee privacy requirements and expectations
+    * Security Awareness Training and enforcement
+    * Acceptable Use
+    * Prohibited activities
+    * Third party governance
+    * Sanctions - penalties for violations
+    * Exceptions
+
+### **Standards**
+
+* high level; often only 1 or 2 sentences; often tech based
+
+* document that dictates a level of performance or functionality for a requirement.
+* NIST has produced a number of standards relating to security
+
+### **Procedures**
+
+* detailed; step by step; how to instructions
+  * * * how; where; when
+      * procedures support policies
+* complete the 'how' portion of compliance by discussing how personnel must meet the requirements of a policy
+
+### Baselines
+
+* detailed; minimum level, or standard for comparison
+* * often technology based. baselines support standards.
+
+### G**uidelines**
+
+* Usually optional
+* general recommended practice when the environment is unpredictable.
+
+* documents that describe alternative methods of implementing a requirement or procedure; may present best practices or optional information that is encouraged to be used.
 
 ![](/assets/gov-1.png)
 
@@ -165,8 +185,6 @@ Applicable laws / regulations
   * GLBA
   * SOX
   * PCI DSS
-
-
 
 ## Security Policies
 
