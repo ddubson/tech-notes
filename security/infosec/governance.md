@@ -92,9 +92,51 @@ Management is busy managing; keeping their vision on business
 * Typically created to establish orgs commitment to the law
 * Describes requirements levied on personnel relating security behavior and mandates how the organization will comply with laws.
 * Consists of several different instruments:
-  * **Policies**
+  * **Policies **- 
     * directive in nature and inform organizational personnel of requirements they must adhere to.
     * Do not describe how a requirement is to be implemented.
+    * Policies - statements of practice, user behavior - who, what, why - high level 1 or 2 sentences.
+      * System specific - mid or low level \(detailed\), tech
+      * Issue specific - mid or low level \(detailed\), users or tech
+      * Contain the following elements:
+      * * Purpose
+        * Scope
+        * Background - why the doc is required, additional resources, etc.
+        * Responsibility - responsible for enforcing the policy
+        * Policy Statement - declaration of whats to accomplish
+        * Action - byproduct of the policy statement - what is required to
+           be done
+        * Related documents
+        * Exceptions
+        * Revision history
+        * Approvals- senior mgmt approval
+      * Are legally binding contracts
+      * Should be based: established frameworks, models, standards, and best practices
+      * Should be reviewed by legal department to confirm legal compliance
+      * Exceptions to policy must be approved and documented.
+      * Must be reviewed and updated regularly - annually after major changes
+      * Must follow formal change control procedure
+      * Training must be provided to employees after changes.
+      * Collectively and comprehensively describe
+      * * Vision, Ethics, and Governance
+        * Applicable Legal and regulatory compliance
+        * The Security program
+        * The risk management program
+        * Data classification and protection
+        * Incident response program
+        * Disaster recovery and business continuity planning
+        * Change control / configuration management
+        * Roles and responsibilities
+        * Financial and Account procedures
+        * Monitoring and Auditing
+        * Employee hiring, working, termination process
+        * Employee privacy requirements and expectations
+        * Security Awareness Training and enforcement
+        * Acceptable Use
+        * Prohibited activities
+        * Third party governance
+        * Sanctions - penalties for violations
+        * Exceptions
   * **Standards**
     * document that dictates a level of performance or functionality for a requirement.
     * NIST has produced a number of standards relating to security
