@@ -36,7 +36,11 @@
     * Store a copy of system-level variables that may be required by the process during runtime.
     * Section is writable.
 
+![](/assets/proc-2.png)
+
 ![](/assets/processes-2.png)
+
+![](/assets/proc-1.png)
 
 ## Load and Execute Process
 
