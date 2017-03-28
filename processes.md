@@ -10,6 +10,32 @@
 
 ## Structure of Process in Memory
 
+* When processes are loaded into memory, they are broken down into many small sections. There are six main sections:
+  * **.text** section
+    * Corresponds to .text portion of the binary exec file.
+    * Contains the machine instructions to get things done.
+    * Marked read-only and will cause segmentation fault if written to.
+    * Size is fixed at runtime when the process is loaded.
+  * **.data** section
+    * Store global initialized variables.
+    * e.g. int a = 0;
+    * Size is fixed at runtime.
+  * **.bss **section
+    * Below stack section \(.bss\) used to store global noninitialized variables
+    * e.g. int a;
+    * Size of the section is fixed at runtime.
+  * **Heap **section
+    * Store dynamically allocated variables 
+    * Grows from lower-addressed memory to the higher addressed memory.
+    * Allocation of memory is controlled through malloc and free
+  * **Stack** section
+    * Keeps track of function calls \(recursively\)
+    * grows from the higher-addressed memory to lower addressed memory
+    * Local variables exist in the stack section.
+  * **Environment/Arguments** section
+    * Store a copy of system-level variables that may be required by the process during runtime.
+    * Section is writable.
+
 ![](/assets/processes-2.png)
 
 ## Load and Execute Process
@@ -22,8 +48,6 @@ The following steps describe, in sequence, what happens when a computer user run
 * The OS executes a branching instruction that causes the CPU to begin execution of the program’s first machine instruction. As soon as the program begins running, it is called a **process**. The OS assigns the process an identification number \(process ID\), which is used to keep track of it while running.
 * The pivcess runs by itself. It ¡s the OS’s job to track the execution of the process and to respond to requests for system resources. Examples of resources are memory. disk files, and input-output devices.
 * When the process ends, its handle is removed and the memory it used is released so it can be used by other programs.
-
-
 
 
 
