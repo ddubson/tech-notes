@@ -93,7 +93,7 @@ Management is busy managing; keeping their vision on business
 * Describes requirements levied on personnel relating security behavior and mandates how the organization will comply with laws.
 * Consists of several different instruments
 
-### Policies 
+### Policies
 
 * directive in nature and inform organizational personnel of requirements they must adhere to.
 * Do not describe how a requirement is to be implemented.
@@ -145,6 +145,7 @@ Management is busy managing; keeping their vision on business
 * high level; often only 1 or 2 sentences; often tech based
 
 * document that dictates a level of performance or functionality for a requirement.
+
 * NIST has produced a number of standards relating to security
 
 ### **Procedures**
