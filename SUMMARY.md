@@ -54,6 +54,7 @@
   * [Logging](logging.md)
   * [File and Directory Permissions](file-and-directory-permissions.md)
 * [Malware Analysis](malware-analysis.md)
+  * [Malware Techniques](malware-techniques.md)
   * [Static Analysis](static-analysis.md)
   * [Dynamic Analysis](dynamic-analysis.md)
   * [Running Malware](running-malware.md)
