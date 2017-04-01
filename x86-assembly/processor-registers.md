@@ -16,5 +16,16 @@
 |  | EFLAGS Register: ZF=Zero Flag; IF=Interrupt enable flag; SF = Sign flag | Used by CPU to track state |  |
 |  | EIP \(Ext. Instruction Ptr\) | Points to the address of the next instruction. | 32 |
 
+## Register Types
+
+* **General-Purpose Registers** - primarily used for arithmetic and data movement.
+  * Each register can be addressed as either a 32-bit or two 16-bit values.
+  * Specialized Uses
+    * EAX is used by multiplication and division instructions \(often called Extended Accumulator Register\); also holds return value of a function
+    * ECX is used as a loop counter
+    * ESP addresses data on the stack \(rarely used for ordinary arithmetic or data transfer\)
+    * ESI/EDI - used for high speed memory transfer instructions.
+    * EBP - used by high level languages to reference function parameters and local variables on the stack.
+* 
 ![](/assets/proc-reg-1.png)![](/assets/proc-reg-2.png)
 
