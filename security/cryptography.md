@@ -8,17 +8,17 @@ Supports one of the three major security goals: **Confidentiality**
 
 **Encryption **- process of converting plaintext to ciphertext
 
-Decryption - process of converting ciphertext to plaintext
+**Decryption** - process of converting ciphertext to plaintext
 
 Cryptography maintains the secrecy of data and also potentially the integrity of data \(via hashing\)
 
 ## Terms
 
-Cryptanalysis - study of breaking encryption algorithms \(attempting to decrypt ciphertext without the appropriate key\)
+**Cryptanalysis** - study of breaking encryption algorithms \(attempting to decrypt ciphertext without the appropriate key\)
 
-Code - usually a concept that is a phrase/sentence \(e.g. "Thunder" -&gt; "Flash"\); usually requires a codebook to interpret
+**Code** - usually a concept that is a phrase/sentence \(e.g. "Thunder" -&gt; "Flash"\); usually requires a codebook to interpret
 
-Cipher - character-by-character representation of a text
+**Cipher** - character-by-character representation of a text
 
 #### Data States
 
@@ -39,4 +39,24 @@ Hashes are static in length, independent of the input.
 Hashing is a one-way process
 
 ![](/assets/crypt-1.png)
+
+## Cryptographic Components
+
+Algorithms - mathematical constructs that define how plaintext is altered to become ciphertext, as well as how that process is reversed with decryption
+
+Keys \(cryptovariable\) - used with an algorithm to perform encryption; are to be kept secret
+
+* A key might be in the form of a password, PIN, etc.
+
+Algorithms should be publicly available whereas keys should be kept private.
+
+![](/assets/crypt-2.png)
+
+**Kerckhoff's Principle** - algorithm should not be kept secret but the key should be.
+
+---
+
+## Algorithm Types
+
+
 
