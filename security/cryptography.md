@@ -20,6 +20,10 @@ Cryptography maintains the secrecy of data and also potentially the integrity of
 
 **Cipher** - character-by-character representation of a text
 
+**In-Band Key Exchange** - crypto keys are exchanged via the same medium as the intended message
+
+**Out-of-Band Key Exchange** - crypto keys are exchange via separate medium as the indended message.
+
 #### Data States
 
 Data-at-Rest - data is in storage and not being accessed
@@ -82,5 +86,28 @@ In addition to XOR, algorithms may utilize more advanced functions to generate t
 
 ![](/assets/crypt-3.png)
 
-Algorithms use the concept of **rounds** - number of times to perform the encryption
+Algorithms use the concept of **rounds** - number of times to perform the encryption. \(e.g. DES uses 16 rounds of encryption\)
+
+## Symmetric Cryptography
+
+involves the use of a single key for encryption and decryption of information.
+
+Symmetric keys are sometimes known as **session keys **or **secret keys **
+
+Symmetric keys are usually used in one time use sessions or throwaway, on-demand communication
+
+![](/assets/crypt-4.png)
+
+Pros:
+
+* Very fast encryption and decryption process.
+
+Cons:
+
+* The more parties involved, the higher the risk the key becomes compromised.
+* Key exchange is usually dangerous or insecure.
+
+## Assymetric Cryptography
+
+
 
