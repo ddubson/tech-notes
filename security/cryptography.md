@@ -58,5 +58,29 @@ Algorithms should be publicly available whereas keys should be kept private.
 
 ## Algorithm Types
 
+### Block Algorithms
 
+operates on a predefined size of group of bits, known as a block.
+
+Block algorithms have various sizes they operate on, such as 16-, 64-, or 128-bit blocks
+
+### Streaming Algorithms
+
+operate on individual bits in an encryption stream
+
+Tend to work much faster than block algorithms
+
+### XOR Function
+
+Block and Streaming algorithms both utilize XOR function on their respective groupings of bits \(blocks or bits\)
+
+In a XOR function, each bit \(either in a block or stream\) is compared with the keystream \(bits fed in by the key\) and changed if it is exclusive.
+
+The generated bits are the ciphertext.
+
+In addition to XOR, algorithms may utilize more advanced functions to generate the ciphertext.
+
+![](/assets/crypt-3.png)
+
+Algorithms use the concept of **rounds** - number of times to perform the encryption
 
