@@ -107,7 +107,28 @@ Cons:
 * The more parties involved, the higher the risk the key becomes compromised.
 * Key exchange is usually dangerous or insecure.
 
-## Assymetric Cryptography
+## Assymetric Cryptography \(Public Key Cryptography\)
+
+Uses two different keys for encryption and decryption
+
+Often called **public key** and **private key** \(making up a **key pair\)**
+
+Public key can be shared freely with anyone
+
+Private key is to be kept secret
+
+What one key can encrypt, the other key can decrypt and vice versa
+
+![](/assets/pubkey-crypt-1.png)
+
+Pros:
+
+* Resolves issue with key exchange, since public keys can be freely shared
+
+Cons:
+
+* Computationally slow to generate keys
+* Works well with only small amount of data
 
 
 
