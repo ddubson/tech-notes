@@ -32,6 +32,7 @@
   * [Fibre Channel](fibre-channel.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
+  * [TCP/IP](tcpip.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
