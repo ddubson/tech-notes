@@ -10,16 +10,22 @@ In normal operation, a TCP connection uses a three-way handshake to establish a 
 
 ![](/assets/syn-flood-1.png)
 
-In a SYN flood, the sender does not reply with an ACK in reply to SYN-ACK. 
+In a SYN flood, 
 
-The malicious sender can either:
+```
+* Attacker sends X number of SYN packets
+* Victim sends a SYN-ACK in response to SYN packets
+* Attacker can send the packets with a spoofed return IP address or not respond to SYN-ACK at all.
+* Victim server will wait for X amount of time for an ACK reply -- since network congestion might be a factor in 
+ACK delay.
+* In this attack, half-open connections (pending for ACK) are using up server resources.
+* Eventually, the number of open pending connections can overwhelm the server and it will no longer be able to 
+accept connections.
+```
 
-1. Actively not respond with a `ACK` packet.
-2. Spoof a fake IP address in packet payload, so that victim host sends a `SYN-ACK` reply to an unsuspecting or an unreachable spoofed address.
+#### Mitigations and Countermeasures
 
-Victim server will wait for X amount of time for an ACK reply -- since network congestion might be a factor in ACK delay.
+[RFC 4987](https://tools.ietf.org/html/rfc4987)
 
-In this attack, half-open connections \(pending for ACK\) are using up server resources.
 
-Eventually, the number of open pending connections can overwhelm the server and it will no longer be able to accept connections.
 
