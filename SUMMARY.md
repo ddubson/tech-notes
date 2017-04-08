@@ -46,6 +46,7 @@
     * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
     * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
   * [Cryptography](security/cryptography.md)
+    * [Algorithms](security/cryptography/algorithms.md)
   * [Attack Techniques](security/attack-techniques.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
