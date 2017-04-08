@@ -10,7 +10,7 @@ In normal operation, a TCP connection uses a three-way handshake to establish a 
 
 ![](/assets/syn-flood-1.png)
 
-In a SYN flood, 
+In a SYN flood,
 
 ```
 * Attacker sends X number of SYN packets
@@ -27,5 +27,5 @@ accept connections.
 
 [RFC 4987](https://tools.ietf.org/html/rfc4987)
 
-
+[Cisco - Defenses against TCP SYN Flooding attacks.](http://www.cisco.com/c/en/us/about/press/internet-protocol-journal/back-issues/table-contents-34/syn-flooding-attacks.html)
 
