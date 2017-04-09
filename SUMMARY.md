@@ -32,12 +32,11 @@
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
   * [IPSec](ipsec.md)
-  * [IPv4](ipv4.md)
-  * [IPv6](ipv6.md)
   * Transport Layer
     * [TCP/IP](tcpip.md)
   * Internet Layer
-
+    * [IPv4](ipv4.md)
+    * [IPv6](ipv6.md)
   * Link Layer
     * [ARP](arp.md)
 * DevOps
