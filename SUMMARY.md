@@ -31,12 +31,12 @@
   * [Fibre Channel](fibre-channel.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
-  * [IPSec](ipsec.md)
   * Transport Layer
     * [TCP/IP](tcpip.md)
   * Internet Layer
     * [IPv4](ipv4.md)
     * [IPv6](ipv6.md)
+    * [IPSec](ipsec.md)
   * Link Layer
     * [ARP](arp.md)
 * DevOps
