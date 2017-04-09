@@ -28,6 +28,7 @@
   * [Traffic Classifications](traffic-classifications.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
+  * Application Layer
   * Transport Layer
     * [TCP/IP](tcpip.md)
   * Internet Layer
