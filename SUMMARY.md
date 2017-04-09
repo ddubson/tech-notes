@@ -10,7 +10,7 @@
   * [Angular CLI](angular-2/angular-cli.md)
   * [Angular Testing](angular-2/angular-testing.md)
   * [Directives](angular-2/directives.md)
-* [Networking](networking.md)
+* Networking
   * [Concepts](concepts.md)
   * [Hardware](hardware.md)
     * [Switches](switches.md)
@@ -19,7 +19,6 @@
     * [Bridges \(802.1D\)](bridges-8021d.md)
   * [Tools](tools.md)
     * [nmap](tools.md)
-  * [ARP](arp.md)
   * [ICMP](icmp.md)
   * [SSL and TLS](ssl-and-tls.md)
   * [SNMP](snmp.md)
@@ -36,6 +35,8 @@
   * [IPSec](ipsec.md)
   * [IPv4](ipv4.md)
   * [IPv6](ipv6.md)
+  * Link Layer
+    * [ARP](arp.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
@@ -73,4 +74,6 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
+
+
 
