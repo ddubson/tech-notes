@@ -34,7 +34,8 @@
   * [DHCP](dhcp.md)
   * [TCP/IP](tcpip.md)
   * [IPSec](ipsec.md)
-  * IPv4
+  * [IPv4](ipv4.md)
+  * [IPv6](ipv6.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
