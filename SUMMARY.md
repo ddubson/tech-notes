@@ -12,17 +12,6 @@
   * [Directives](angular-2/directives.md)
 * Networking
   * [Concepts](concepts.md)
-  * [Hardware](hardware.md)
-    * [Switches](switches.md)
-    * [Hubs](hubs.md)
-    * [Routers](routers.md)
-    * [Bridges \(802.1D\)](bridges-8021d.md)
-  * [Tools](tools.md)
-    * [nmap](tools.md)
-  * [Traffic Classifications](traffic-classifications.md)
-  * [Subnetting & Masking](subnetting-and-masking.md)
-  * [SSL and TLS](ssl-and-tls.md)
-  * [NAT](nat.md)
   * Application Layer
     * [DHCP](dhcp.md)
     * [DMZ](dmz.md)
@@ -35,6 +24,20 @@
     * [IPv6](ipv6.md)
     * [IPSec](ipsec.md)
     * [ICMP](icmp.md)
+  * Link Layer
+    * [ARP](arp.md)
+    * [Fibre Channel](fibre-channel.md)
+    * [Ethernet](ethernet.md)
+  * [Hardware](hardware.md)
+    * [Switches](switches.md)
+    * [Hubs](hubs.md)
+    * [Routers](routers.md)
+    * [Bridges \(802.1D\)](bridges-8021d.md)
+  * [Tools](tools.md)
+    * [nmap](tools.md)
+  * [Traffic Classifications](traffic-classifications.md)
+  * [Subnetting & Masking](subnetting-and-masking.md)
+  * [SSL and TLS](ssl-and-tls.md)
   * Link Layer
     * [ARP](arp.md)
     * [Fibre Channel](fibre-channel.md)
@@ -54,6 +57,7 @@
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
   * [Attack Techniques](security/attack-techniques.md)
+    * [ARP Spoofing](security/attack-techniques/arp-spoofing.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
@@ -76,6 +80,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
