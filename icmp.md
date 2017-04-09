@@ -5,6 +5,9 @@
 * ICMP is encapsulated in IP - no layer 4 protocol \(transport\)
 * Several different types of ICMP, each trying to provide about a network condition \(only handful used regularly\)
 * Structure: ICMP Header, Data Area
+* **Security**:
+  * Can be used to conduct a DoS attack on hosts and networks.
+  * Can be used to send broadcast ping packets to a network, using a spoofed IP source address, which results in a massive storm of ping replies back to an unsuspecting host.	
 
 ## Types
 
@@ -31,6 +34,4 @@
     * several cases: router is offline, entire network is offline, router doesn’t know.
 
 ICMPv6 - RFC 4443
-
-
 
