@@ -19,7 +19,6 @@
     * [Bridges \(802.1D\)](bridges-8021d.md)
   * [Tools](tools.md)
     * [nmap](tools.md)
-  * [ICMP](icmp.md)
   * [SSL and TLS](ssl-and-tls.md)
   * [SNMP](snmp.md)
   * [SSH/SFTP/SCP](sshsftpscp.md)
@@ -27,8 +26,6 @@
   * [NAT](nat.md)
   * [DNS](dns.md)
   * [Traffic Classifications](traffic-classifications.md)
-  * [Ethernet](ethernet.md)
-  * [Fibre Channel](fibre-channel.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
   * Transport Layer
@@ -37,8 +34,11 @@
     * [IPv4](ipv4.md)
     * [IPv6](ipv6.md)
     * [IPSec](ipsec.md)
+    * [ICMP](icmp.md)
   * Link Layer
     * [ARP](arp.md)
+    * [Fibre Channel](fibre-channel.md)
+    * [Ethernet](ethernet.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
