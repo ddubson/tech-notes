@@ -33,6 +33,7 @@
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [DHCP](dhcp.md)
   * [TCP/IP](tcpip.md)
+  * [IPSec](ipsec.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
