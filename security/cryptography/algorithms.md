@@ -39,6 +39,28 @@ Uses three 56-bit key bundles.
 
 3DES uses Encrypt-Decrypt-Encrypt \(EDE\) method with 3 separate keys during the three stages.
 
+### Advanced Encryption Standard \(AES\) {#toc_0}
+
+* Established in 2001 by NIST to be official encryption standard for U.S. Govt.
+* Based on the
+  **Rijndael Algorithm**
+* Symmetric block cipher that can use block sizes of 128 bits with key sizes of 128, 192, 256 bits.
+  * 10 rounds for 128-bit keys
+  * 12 rounds for 192-bit keys
+  * 14 rounds for 256-bit keys
+* Can use different modes for encryption/decryption.
+* Most attacks on AES are theoretical \(side-channel attacks\)
+
+### Blowfish {#toc_1}
+
+* Block cipher created in 1993 \(Bruce Schneier\)
+* Based on 64-bit blocks, with key sizes from 32 bits to 448 bits.
+* Uses 16 rounds of encryption
+* Susceptible to birthday attacks \(in HTTPS context\)
+* Susceptible to collision attacks in CBC mode \(SWEET32\)
+
+---
+
 ## Assymetric
 
 
