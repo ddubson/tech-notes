@@ -59,9 +59,64 @@ Uses three 56-bit key bundles.
 * Susceptible to birthday attacks \(in HTTPS context\)
 * Susceptible to collision attacks in CBC mode \(SWEET32\)
 
+### TwoFish
+
+* Replacement for Blowfish
+* Symmetric block algorithm with 128-bit block size.
+* Keys of 128-bit, 192-bit, or 256-bit keys.
+* Uses 16 rounds of encryption.
+
+### RC4
+
+* Streaming cipher
+* Invented by Ron Rivest
+* Uses one round of encryption 
+* Key sizes from 40 to 2048 bits in length.
+* Most popular in wireless encryption
+* Currently cryptographically vulnerable and is not recommended for use \(RFC 7465 - RC4 eliminated from TLS\)	
+
 ---
 
-## Assymetric
+## Assymetric {#toc_4}
+
+### RSA {#toc_5}
+
+* Used to create a public-private key pair.
+* Generates keys via factoring two very large prime number
+* One round of encryption
+* Key sizes from 1,024 to 4,096 bits.
+* Defacto assymetric algorithm today
+
+### Diffie-Hellman {#toc_6}
+
+* aka D-H or DHE -- series of key exchange protocols and variants.
+* D-H provides secure key exchange.
+* Elliptic Curve Diffie-Hellman Exchange \(ECDHE\) is a variant of DHE based upon elliptic curve cryptography.
+
+### PGP/GPG {#toc_7}
+
+* PGP -&gt; Pretty Good Privacy - crypto application and protocol suite.
+  * Can use both assymetric and symmetric keys for a wide variety of operations:
+    * bulk encryption
+    * data-at-rest encryption
+    * key-pair generation
+    * key exchange
+* Uses "web of trust" instead of public key infrastructure \(PKI\)
+* GPG is open source equivalent \(Gnu Privacy Guard\)
+
+### Elliptic Curve Cryptography \(ECC\) {#toc_8}
+
+* ECC is an assymetric method of cryptography based on algebraic structure of elliptic curves over finite fields.
+* Applies to encryption and digital signatures.
+* Widely implemented in smart phones
+
+### ElGamal {#toc_9}
+
+* Assymetric algorithm for digital signatures and encryption.
+* Widely used in open standards, including PGP/GPG
+* US Govt. Digital Signature Algorithm \(DSA\) is based on ElGamal signature scheme
+
+---
 
 
 
