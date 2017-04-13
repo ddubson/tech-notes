@@ -73,7 +73,7 @@ Uses three 56-bit key bundles.
 * Uses one round of encryption 
 * Key sizes from 40 to 2048 bits in length.
 * Most popular in wireless encryption
-* Currently cryptographically vulnerable and is not recommended for use \(RFC 7465 - RC4 eliminated from TLS\)	
+* Currently cryptographically vulnerable and is not recommended for use \(RFC 7465 - RC4 eliminated from TLS\)    
 
 ---
 
@@ -117,6 +117,27 @@ Uses three 56-bit key bundles.
 * US Govt. Digital Signature Algorithm \(DSA\) is based on ElGamal signature scheme
 
 ---
+
+## Hashing Algorithms {#toc_10}
+
+### Message Digest 5 {#toc_11}
+
+* Developed by Ron Rivest in '91
+* Generates a 128-bit hash, 32-hex long
+* Replaced MD4
+* Susceptible to colision attacks
+* Should not be used in secure environments
+
+### SHA {#toc_12}
+
+* Secure Hash Algorithm \(SHA\) - series of hash functions sponsored by NIST.
+* SHA-1 is a 160-bit algorithm, producd 40 character hashes.
+* SHA-2 is two separate algorithms
+  * SHA-256
+  * SHA-224
+  * SHA-512
+  * SHA-384
+* SHA-3 - based on Keccak hashing function
 
 
 
