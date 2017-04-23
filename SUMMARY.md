@@ -38,10 +38,6 @@
   * [Traffic Classifications](traffic-classifications.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
   * [SSL and TLS](ssl-and-tls.md)
-  * Link Layer
-    * [ARP](arp.md)
-    * [Fibre Channel](fibre-channel.md)
-    * [Ethernet](ethernet.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
@@ -83,4 +79,6 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
+
+
 
