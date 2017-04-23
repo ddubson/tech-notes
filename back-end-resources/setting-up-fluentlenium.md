@@ -71,6 +71,10 @@ import static org.junit.Assert.assertTrue;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = App.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AppTest extends FluentTest {
+    private String PHANTOMJS_LOG_LEVEL = "--webdriver-loglevel=WARN";
+    private String PHANTOMJS_LOG_PATH = "--webdriver-logfile=logs/phantomjs.log";
+    private String PHANTOMJS_BIN_PATH = "node_modules/phantomjs-prebuilt/bin/phantomjs";
+
     @LocalServerPort
     int serverPort;
 
@@ -85,8 +89,8 @@ public class AppTest extends FluentTest {
     @Override
     public WebDriver newWebDriver() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "node_modules/phantomjs-prebuilt/bin/phantomjs");
-        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, new String[] { "--webdriver-loglevel=WARN", "--webdriver-logfile=logs/phantomjs.log" });
+        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, PHANTOMJS_BIN_PATH);
+        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, new String[] { PHANTOMJS_LOG_LEVEL, PHANTOMJS_LOG_PATH });
         PhantomJSDriverService service = PhantomJSDriverService.createDefaultService(capabilities);
         return new PhantomJSDriver(service, capabilities);
     }
