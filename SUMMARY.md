@@ -65,6 +65,7 @@
     * [Threats](security/infosec/threats.md)
     * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
     * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
+    * [Host Threats](security/infosec/host-threats.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
   * [Attack Techniques](security/attack-techniques.md)
@@ -82,6 +83,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
