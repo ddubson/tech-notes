@@ -1,0 +1,114 @@
+# Setting up Fluentlenium with PhantomJS
+
+This is a guide to help introduce Fluentlenium \(running with PhantomJS\) in a Java application project \(Gradle\)
+
+#### Fetch Spring Boot test framework and utilities
+
+**build.gradle**
+
+```
+dependencies {
+    testCompile 'org.springframework.boot:spring-boot-starter-test:{VERSION}.RELEASE'
+}
+```
+
+#### Fetch Fluentlenium dependencies
+
+**build.gradle**
+
+```
+dependencies {
+    testCompile 'org.fluentlenium:fluentlenium-junit:3.2.0'
+    testCompile 'org.fluentlenium:fluentlenium-assertj:3.2.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.seleniumhq.selenium:selenium-remote-driver:2.53.1'
+    testCompile 'xml-apis:xml-apis:1.4.01'
+}
+```
+
+Sidenote: newer versions of`selenium-remote-driver`do not work with ghostdriver
+
+#### Fetch the GhostDriver for interacting with PhantomJS
+
+**build.gradle**
+
+```
+repositories { 
+    maven { url 'https://jitpack.io' } 
+}
+```
+
+```
+dependencies {
+    testCompile 'com.github.detro:ghostdriver:2.0.0'
+}
+```
+
+#### Install phantomjs via NPM
+
+```
+npm init
+npm i --save phantomjs-prebuilt
+```
+
+#### Create a simple Fluent test case
+
+```java
+import org.fluentlenium.adapter.junit.FluentTest;
+import org.fluentlenium.core.annotation.Page;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.springframework.boot.context.embedded.LocalServerPort;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import static org.junit.Assert.assertTrue;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = App.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class AppTest extends FluentTest {
+    @LocalServerPort
+    int serverPort;
+
+    @Override
+    public String getBaseUrl() {
+        return "http://localhost:"+serverPort;
+    }
+
+    @Page
+    HomePage homePage;
+
+    @Override
+    public WebDriver newWebDriver() {
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "node_modules/phantomjs-prebuilt/bin/phantomjs");
+        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, new String[] { "--webdriver-loglevel=WARN", "--webdriver-logfile=logs/phantomjs.log" });
+        PhantomJSDriverService service = PhantomJSDriverService.createDefaultService(capabilities);
+        return new PhantomJSDriver(service, capabilities);
+    }
+
+    @Test
+    public void testHomePage() {
+        homePage.go();
+        assertTrue(homePage.find("html").present());
+    }
+}
+```
+
+Fluent Page
+
+```
+import org.fluentlenium.core.FluentPage;
+import org.fluentlenium.core.annotation.PageUrl;
+
+@PageUrl("/")
+public class HomePage extends FluentPage {
+}
+```
+
+
+

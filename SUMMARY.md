@@ -4,6 +4,7 @@
 * [TODOs](todos.md)
 * [Front-End Resources](front-end-resources.md)
 * [Back-End Resources](back-end-resources.md)
+  * [Setting up Fluentlenium](back-end-resources/setting-up-fluentlenium.md)
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
@@ -79,6 +80,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
