@@ -1,6 +1,6 @@
 # Setting up Fluentlenium with PhantomJS
 
-This is a guide to help introduce Fluentlenium \(running with PhantomJS\) in a Java application project \(Gradle\)
+This is a guide to help introduce Fluentlenium \(running with PhantomJS\) in a Spring Boot application project \(Gradle\)
 
 #### Fetch Spring Boot test framework and utilities
 
