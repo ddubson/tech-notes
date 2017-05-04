@@ -12,3 +12,7 @@ rxjs/Observable - promise is not fulfilled if no subscribers are present
 
 HATEOAS - `patch` method does a partial update to a model while `put` is a full update.
 
+
+
+EXAMPLE
+
