@@ -25,6 +25,7 @@
     * [IPv6](ipv6.md)
     * [IPSec](ipsec.md)
     * [ICMP](icmp.md)
+    * [SSL and TLS](ssl-and-tls.md)
   * Link Layer
     * [ARP](arp.md)
     * [Fibre Channel](fibre-channel.md)
@@ -38,7 +39,6 @@
     * [nmap](tools.md)
   * [Traffic Classifications](traffic-classifications.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
-  * [SSL and TLS](ssl-and-tls.md)
 * DevOps
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
