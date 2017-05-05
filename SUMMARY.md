@@ -65,6 +65,7 @@
     * [Host Threats](security/infosec/host-threats.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
+    * [Cipher Strength](security/cryptography/cipher-strength.md)
   * [Attack Techniques](security/attack-techniques.md)
     * [ARP Spoofing](security/attack-techniques/arp-spoofing.md)
 * [Malware Analysis](malware-analysis.md)

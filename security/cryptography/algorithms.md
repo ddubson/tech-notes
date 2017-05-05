@@ -4,6 +4,7 @@
 
 * **Algorithm**
 * **Type - **symmetric, assymetric, etc.
+* **Initialization Vector **- starting variable that can be used to mix in with cryptographic primitive; required to be random/pseudo-random; ensures that when plaintext is encrypted multiple times, every ciphertext output is different.
 * **Key Size** - the length of the key used to encrypt/decrypt data. \(e.g. 64-, 128-, 256-, 512-bit, etc.\)
 * **Mode** - defined method that determines how plaintext block is input and changed to produce ciphertext.
 
@@ -167,6 +168,4 @@ Wi-Fi Protected Access \(WPA\) - supports RC4; improves in Temporal Key Integrit
 WPA2 - uses AES as encryption algorithm.
 
 WPA and WPA2 use concept of pre-shared keys.
-
-
 
