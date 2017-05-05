@@ -1,5 +1,12 @@
 # Algorithms
 
+## Attributes
+
+* **Algorithm**
+* **Type - **symmetric, assymetric, etc.
+* **Key Size** - the length of the key used to encrypt/decrypt data. \(e.g. 64-, 128-, 256-, 512-bit, etc.\)
+* **Mode** - defined method that determines how plaintext block is input and changed to produce ciphertext.
+
 ## Symmetric
 
 ### DES - Data Encryption Standard
@@ -13,7 +20,7 @@ Operated on 64-bit blocks
 * 8 bits were used for computational overhead
 * 56 bit key size
 
-DES uses 5 different modes \(defined method that determines how plaintext block is input and changed to produce ciphertext\)
+DES uses 5 different modes
 
 * **Electronic Code Book \(ECB\)** mode is simplest
   * Each 64-bit block will produce the same output for a given input \(predictable\)
@@ -138,6 +145,12 @@ Uses three 56-bit key bundles.
   * SHA-512
   * SHA-384
 * SHA-3 - based on Keccak hashing function
+
+---
+
+# Data Storage Security
+
+Most programs \(at OS level or 3rd party\) use **symmetric algorithms** to encrypt data at rest.
 
 
 
