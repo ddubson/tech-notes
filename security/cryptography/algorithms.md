@@ -156,7 +156,17 @@ Most programs \(at OS level or 3rd party\) use **symmetric algorithms** to encry
 
 SSL - uses both symmetric and assymetric algorithms in a hybrid combination to authenticate users and provide encrypted communications between server-client.
 
-TLS - replacement for SSL; 
+TLS - replacement for SSL;
+
+## Wireless Encryption
+
+Wired Equivalent Privacy \(WEP\) - uses RC4 streaming protocol. \(obsolete, cryptographically broken\)
+
+Wi-Fi Protected Access \(WPA\) - supports RC4; improves in Temporal Key Integrity Protocol \(TKIP\) which dynamically encrypts every packet transmitted from a wireless device.
+
+WPA2 - uses AES as encryption algorithm.
+
+WPA and WPA2 use concept of pre-shared keys.
 
 
 
