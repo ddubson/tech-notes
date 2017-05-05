@@ -152,5 +152,11 @@ Uses three 56-bit key bundles.
 
 Most programs \(at OS level or 3rd party\) use **symmetric algorithms** to encrypt data at rest.
 
+# Transport Encryption
+
+SSL - uses both symmetric and assymetric algorithms in a hybrid combination to authenticate users and provide encrypted communications between server-client.
+
+TLS - replacement for SSL; 
+
 
 
