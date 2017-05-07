@@ -45,6 +45,8 @@
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
     * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
+  * VMWare
+    * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
 * Linux
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
@@ -83,6 +85,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
