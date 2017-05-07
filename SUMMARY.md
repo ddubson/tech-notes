@@ -35,8 +35,9 @@
     * [Hubs](hubs.md)
     * [Routers](routers.md)
     * [Bridges \(802.1D\)](bridges-8021d.md)
-  * Tools
+  * [Tools](tools.md)
     * [nmap](tools.md)
+    * [nslookup recipes](nslookup-recipes.md)
   * [Traffic Classifications](traffic-classifications.md)
   * [Subnetting & Masking](subnetting-and-masking.md)
 * DevOps
@@ -81,6 +82,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
