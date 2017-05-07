@@ -20,12 +20,13 @@
     * [SNMP](snmp.md)
     * [NAT](nat.md)
     * [SSH/SFTP/SCP](sshsftpscp.md)
-  * Internet Layer
+  * [Internet Layer](internet-layer.md)
     * [IPv4](ipv4.md)
     * [IPv6](ipv6.md)
     * [IPSec](ipsec.md)
     * [ICMP](icmp.md)
     * [SSL and TLS](ssl-and-tls.md)
+    * [DNS](dns.md)
   * Link Layer
     * [ARP](arp.md)
     * [Fibre Channel](fibre-channel.md)
