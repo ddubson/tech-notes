@@ -30,7 +30,7 @@
     * [ARP](arp.md)
     * [Fibre Channel](fibre-channel.md)
     * [Ethernet](ethernet.md)
-  * Hardware
+  * [Hardware](hardware.md)
     * [Switches](switches.md)
     * [Hubs](hubs.md)
     * [Routers](routers.md)
