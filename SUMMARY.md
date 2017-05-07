@@ -26,7 +26,7 @@
     * [IPSec](ipsec.md)
     * [ICMP](icmp.md)
     * [SSL and TLS](ssl-and-tls.md)
-    * [DNS](dns.md)
+    * [DNS](/dns.md)
   * Link Layer
     * [ARP](arp.md)
     * [Fibre Channel](fibre-channel.md)
@@ -83,4 +83,6 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
+
+
 
