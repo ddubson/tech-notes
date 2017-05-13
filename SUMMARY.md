@@ -67,6 +67,8 @@
     * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
     * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
     * [Host Threats](security/infosec/host-threats.md)
+  * OpSec
+    * [Concepts](security/concepts.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
     * [Cipher Strength](security/cryptography/cipher-strength.md)
