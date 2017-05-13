@@ -38,13 +38,31 @@ Latest comment:
 </html>
 ```
 
+# Types of XSS
+
+### Persistent XSS
+
+Malicious string originates from website's database.
+
+### Reflected XSS
+
+Malicious string originates from victim's request.
+
+The attacker provides a carefully crafted malicious URL to the victim to click
+
+When the victim clicks the link, the XSS payload executes its intention.
+
+This type of attack is usually paired with a phishing campaign.
+
+### DOM-based XSS
+
+vulnerability is in the client side code rather than the server side.
+
+
+
 # Resources
 
 [https://excess-xss.com/](https://excess-xss.com/)
 
 [https://www.owasp.org/index.php/Cross-site\_Scripting\_\(XSS\)](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
-
-
-
-
 
