@@ -69,6 +69,8 @@
     * [Host Threats](security/infosec/host-threats.md)
   * OpSec
     * [Concepts](security/concepts.md)
+  * AppSec
+    * [XSS](security/xss.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
     * [Cipher Strength](security/cryptography/cipher-strength.md)
