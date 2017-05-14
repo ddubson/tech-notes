@@ -58,11 +58,11 @@ This type of attack is usually paired with a phishing campaign.
 
 vulnerability is in the client side code rather than the server side.
 
-
-
 # Resources
 
 [https://excess-xss.com/](https://excess-xss.com/)
 
 [https://www.owasp.org/index.php/Cross-site\_Scripting\_\(XSS\)](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
+
+[https://www.owasp.org/index.php/XSS\_Filter\_Evasion\_Cheat\_Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 
