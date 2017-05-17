@@ -47,7 +47,7 @@
     * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
   * VMWare
     * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
-* Linux
+* [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
     * [Create Partition from Free Space](create-partition-from-free-space.md)

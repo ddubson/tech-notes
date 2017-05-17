@@ -1,4 +1,4 @@
-# Public Key Infrastructure \(PKI\)
+ublic Key Infrastructure \(PKI\)
 
 ## Concepts
 
@@ -41,7 +41,7 @@ PKI algorithms include:
 
 Standards govern the construction and formatting of digital certificates.
 
-#### **X.509 Standard** 
+#### **X.509 Standard**
 
 Managed by International Telecommunication Union - Telecommunication Standardization Sector \(ITU-T\)\)
 
@@ -69,6 +69,10 @@ PKCS describes:
 ---
 
 ## PKI Services
+
+### Key Generation and Exchange
+
+
 
 
 
