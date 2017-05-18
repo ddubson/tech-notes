@@ -1,4 +1,4 @@
-ublic Key Infrastructure \(PKI\)
+# Public Key Infrastructure \(PKI\)
 
 ## Concepts
 
@@ -71,6 +71,32 @@ PKCS describes:
 ## PKI Services
 
 ### Key Generation and Exchange
+
+Key generation is the act of creating a private and public key pair, which is issued to an individual based on confirmed identity.
+
+RSA is the most popular key generation algorithm.
+
+Key exchange is a process that assists in creation and secure exchange of symmetric keys \(session keys\) that are used for that communication session only.
+
+After creation, public and private keys are used to encrypt/decrypt session keys once they are transmitted and received by both parties.
+
+#### Non-Repudiation
+
+Someone cannot deny that they took a particular action -- their identity is positively verified.
+
+Non-repudiation in PKI is assured via the use of public/private keys.
+
+#### Message Integrity
+
+Using hashing algos like SHA-512, messages can be hashed to create unique fingerprints that can be checked before and after transmission.
+
+Messages can be changed due to non-malicious causes like bad transmission mediums potentially dropping bits of data.
+
+PKI hashes the message and encrypts both the message and the hash and transmits the payload.
+
+#### Digital Signatures
+
+A person encrypting a message with private key can let anyone with a public key decrypt it, so that leads to verifying that the origin of the message is the possessor of the private key.
 
 
 
