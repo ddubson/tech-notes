@@ -98,7 +98,39 @@ PKI hashes the message and encrypts both the message and the hash and transmits 
 
 A person encrypting a message with private key can let anyone with a public key decrypt it, so that leads to verifying that the origin of the message is the possessor of the private key.
 
+## Digital Certificates
 
+Simple electronic files that follow a format \(X.509, PKCS\)
+
+Can have many different extensions \(.cer, .pem\)
+
+Might have multiple types serving a specific function within PKI
+
+Certificates contain a variety of information, including:
+
+* Public Key 
+* Identity of person
+* Issuing Organization
+* Valid Dates
+* Functions for certificate
+
+### Certificate Registration
+
+Lifecycle begins when a user registers to receive a certificate.
+
+Person must provide valid information and identification to the **Certificate Authority \(CA\)** 
+
+CA must authenticate the user's personal information
+
+Valid forms of identification can be:
+
+* Driver's License
+* Birth Certificate
+* Passport
+* Photographs
+* etc.
+
+CA makes a decision to issue or deny a certificate
 
 
 
