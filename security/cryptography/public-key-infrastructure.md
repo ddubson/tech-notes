@@ -118,7 +118,7 @@ Certificates contain a variety of information, including:
 
 Lifecycle begins when a user registers to receive a certificate.
 
-Person must provide valid information and identification to the **Certificate Authority \(CA\)** 
+Person must provide valid information and identification to the **Certificate Authority \(CA\)**
 
 CA must authenticate the user's personal information
 
@@ -131,6 +131,16 @@ Valid forms of identification can be:
 * etc.
 
 CA makes a decision to issue or deny a certificate
+
+### Certificate Authority \(CA\)
+
+Entity that controls and issues digital certificates.
+
+Commercial organizations such as: VeriSign, Thawte, or Entrust
+
+Organizations sometimes have internal CAs for use within the organization
+
+CA also manages the certificate server, that produces the certificates and generates keys
 
 
 
