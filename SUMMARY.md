@@ -69,8 +69,9 @@
     * [Host Threats](security/infosec/host-threats.md)
   * OpSec
     * [Concepts](security/concepts.md)
-  * AppSec
+  * [AppSec](security/appsec.md)
     * [XSS](security/xss.md)
+    * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
     * [Cipher Strength](security/cryptography/cipher-strength.md)
