@@ -1,4 +1,4 @@
-# nmap - network scanning and analysis tool
+# nmap - network scanning and analysis tool	
 
 ## Useful commands
 
@@ -8,9 +8,6 @@ nmap [hostname|IP]
 
 # service scan
 nmap -sV [hostname|ip]
-
-# banner check
-nmap -A [hostname|ip]
 
 # service scan with output logging
 nmap -sV -oA log.txt [host|ip|subnet]
