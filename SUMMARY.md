@@ -45,7 +45,7 @@
   * [Kubernetes](kubernetes.md)
     * [Install and Configure](kubernetes/install-and-configure.md)
     * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
-  * VMWare
+  * [VMWare](vmware.md)
     * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
