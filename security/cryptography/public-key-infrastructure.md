@@ -136,11 +136,28 @@ CA makes a decision to issue or deny a certificate
 
 Entity that controls and issues digital certificates.
 
+* Creating \(Generating\)
+* Renewing
+* Suspending
+* Revoking
+
 Commercial organizations such as: VeriSign, Thawte, or Entrust
 
 Organizations sometimes have internal CAs for use within the organization
 
 CA also manages the certificate server, that produces the certificates and generates keys
+
+Some CAs delegate registration function to Registration Authorities \(RAs\) - verify user identities
+
+When a certificate is requested, the CA generates a **Certificate Signing Request \(CSR\)** - information that will be embedded in the digital certificate \(pub key, org name, common name, etc.\)
+
+#### Certificate Servers
+
+Orgs might manage their certificates with an array of servers.
+
+At root, there is a **root CA Server** - issues its own self-signed certificate to itself or an external org issues one to it.
+
+* Root CA servers usually generate certs only for subordinate CA servers
 
 
 
