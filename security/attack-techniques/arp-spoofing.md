@@ -14,10 +14,6 @@ Wireshark
 
 Figure out the Default Gateway first by command:
 
-\*\*\[terminal\]
-
-\*\*\[prompt foo@joe\]\*\*\[path ~\]\*\*\[delimiter  $ \]\*\*\[command ./myscript\]
-
 ```
 route -n
 ```
