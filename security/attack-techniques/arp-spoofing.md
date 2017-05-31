@@ -14,11 +14,17 @@ Wireshark
 
 Figure out the Default Gateway first by command:
 
+\*\*terminal
+
+\*\*\[prompt foo@joe\]\*\*\[path ~\]\*\*\[delimiter  $ \]\*\*\[command ./myscript\]
+
+
+
 ```
 route -n
 ```
 
-Narrow down the target by running \`nmap\` sweep 
+Narrow down the target by running \`nmap\` sweep
 
 > Be sure to get written consent for any network scanning activities. Criminal penalties can be levied onto you if permission is not granted.
 
