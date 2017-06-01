@@ -159,5 +159,56 @@ At root, there is a **root CA Server** - issues its own self-signed certificate 
 
 * Root CA servers usually generate certs only for subordinate CA servers
 
+Subordinate servers perform various functions that CA servers are charged to do
+
+root CA is taken offline once it has done its duties to subordinate servers![](/assets/crypt-12315.png)
+
+If root CA is compromised, all subordinate servers are considered compromised as well.
+
+#### Certificate Revocation Lists
+
+Certificate Revocation List \(CRL\) is a list published by CA that contains all certificates issued by the CA and revoked.
+
+Used to check validity of certificates by external parties
+
+**Online Certificate Security Protocol \(OCSP\) - **used to automate certificate validation, checking the status of cert seamless and transparent
+
+#### Certificate Expiration, Suspension, Revocation
+
+Certificates can and should naturally expire
+
+Certificates can be suspended by a CA.
+
+* Suspended certificate can be reinstated if needed
+
+Certificates can be revoked by a CA
+
+* Revoked certs cannot be reinstated
+
+#### Key Escrow
+
+Practice of maintaining private keys, by independent third parties.
+
+Used for In cases of a user encrypting data then leaving the company
+
+
+
+#### Trust Models
+
+Private CAs may not generally be trusted outside the organization where the CA is.
+
+Trust models were introduced between organizations to take advantage of each other's certificates.
+
+Types:
+
+* Hierarchical Trust - involves trust in digital certs within org boundaries. All subordinate and intermediate CA servers trust each other.
+* Cross-Trust - between two different organizations.
+  * Organizations have their own CAs and issuing servers.
+  * Enables two organizations' root CA servers to trust each other.
+* Web-of-Trust - often not used in PKI
+  * found in smaller groups or orgs
+  * no central issuing authority
+  * not suitable for large groups.
+
 
 
