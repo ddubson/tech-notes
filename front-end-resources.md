@@ -33,5 +33,10 @@
 
 * [Jasmine - BDD](https://jasmine.github.io/)
 
+#### UI Tables
+
+* Angular 4
+  * [https://github.com/swimlane/ngx-datatable](https://github.com/swimlane/ngx-datatable "Swimlane&apos;s ngx-datatable")
+
 
 
