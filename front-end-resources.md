@@ -29,6 +29,10 @@
 
 * [D3.js](https://d3js.org/)
 
+#### Test Runners
+
+* [https://github.com/karma-runner/karma](https://github.com/karma-runner/karma)
+
 #### Test Frameworks
 
 * [Jasmine - BDD](https://jasmine.github.io/)
