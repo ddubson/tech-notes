@@ -133,6 +133,7 @@
 * Can span different attack methods -  social engineering, technical attacks.
 * Motivated by revenge, profit, or sabotage
 * Mitigations include:
+
   * User education
   * Security clearances
   * Background checks
@@ -152,9 +153,8 @@
 
 * Involves sending false updates to a host, which it caches in its memory, resolving IP addresses to hardware \(or MAC addresses\).
 * Sending false info to the host’s ARP cache may cause the communication with the malicious host instead of the legitimate one.
-* Commonly used for network traffic sniffing - aggregating usernames/passwords/etc.
-
-
+* Commonly used for network traffic sniffing - aggregating usernames/passwords/etc. 
+* More info: [ARP Spoofing](/security/attack-techniques/arp-spoofing.md)
 
 ## Client-side Attacks
 
