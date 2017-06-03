@@ -72,6 +72,7 @@
   * [AppSec](security/appsec.md)
     * [XSS](security/xss.md)
     * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
+    * [Tools](security/tools.md)
   * [Cryptography](security/cryptography.md)
     * [Algorithms](security/cryptography/algorithms.md)
     * [Cipher Strength](security/cryptography/cipher-strength.md)
