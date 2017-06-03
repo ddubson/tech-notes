@@ -47,6 +47,7 @@
     * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
   * [VMWare](vmware.md)
     * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
+  * [Docker](docker.md)
 * [Linux](linux.md)
   * [RHEL](rhel.md)
     * [Package Management](package-management.md)
