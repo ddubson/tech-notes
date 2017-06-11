@@ -85,6 +85,7 @@
 * [Tools](tools.md)
   * [nmap](tools.md)
   * [nslookup recipes](nslookup-recipes.md)
+* [Packet Analysis](packet-analysis.md)
 
 ## Operating Systems
 
@@ -110,6 +111,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Intel x86 Assembly](intel-x86-assembly.md)
   * [Processor Registers](/x86-assembly/processor-registers.md)
-
-
 
