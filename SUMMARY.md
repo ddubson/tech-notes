@@ -69,6 +69,7 @@
     * [Host Threats](security/infosec/host-threats.md)
   * [Vulnerability Management](security/vulnerability-management.md)
   * [Vulnerability Categories](security/vulnerability-categories.md)
+  * [Incident Response](security/incident-response.md)
   * OpSec
     * [Concepts](security/concepts.md)
   * [AppSec](security/appsec.md)
