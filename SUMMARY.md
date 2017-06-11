@@ -10,12 +10,12 @@
   * [Concepts](security/infosec/concepts.md)
   * [Governance](security/infosec/governance.md)
   * [Risk Management](security/infosec/risk-management.md)
-  * [Threats](security/infosec/threats.md)
   * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
   * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
-  * [Host Threats](security/infosec/host-threats.md)
 * [Vulnerability Management](security/vulnerability-management.md)
 * [Vulnerability Categories](security/vulnerability-categories.md)
+* [Threats](security/infosec/threats.md)
+  * [Host Threats](security/infosec/host-threats.md)
 * [Incident Response](security/incident-response.md)
 * [Cryptography](security/cryptography.md)
   * [Algorithms](security/cryptography/algorithms.md)
@@ -110,4 +110,6 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Intel x86 Assembly](intel-x86-assembly.md)
   * [Processor Registers](/x86-assembly/processor-registers.md)
+
+
 
