@@ -40,6 +40,36 @@
 
 ![](/assets/processes-2.png)
 
+\#\#\# Buffers
+
+
+
+	• Refer to storage place used to receive and hold data until it can be handled by a process.
+
+	• Each process has its own set of buffers --&gt; done by allocating the memory within the .data and .bss section of the process memory.
+
+	• Once allocated the buffer is fixed length.
+
+
+
+\#\#\# Strings in Memory
+
+	• Strings are continuous arrays of character data in memory
+
+	• The string is referenced in memory by its first character.
+
+	• The string is terminated by a null character \(\o in C\)
+
+
+
+\#\#\# Pointers
+
+	• Hold the address of other pieces of memory
+
+Pointers are saved in 4 bytes \(DWORD\) of contiguous memory since memory addresses are 32 bits in length
+
+---
+
 ![](/assets/proc-1.png)
 
 ## Load and Execute Process
