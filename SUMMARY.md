@@ -6,7 +6,7 @@
 
 ## Security
 
-* [InfoSec](security/infosec.md)
+* [Information Security](security/infosec.md)
   * [Concepts](security/infosec/concepts.md)
   * [Governance](security/infosec/governance.md)
   * [Risk Management](security/infosec/risk-management.md)
@@ -23,9 +23,9 @@
   * [Public Key Infrastructure](security/cryptography/public-key-infrastructure.md)
 * [Attack Techniques](security/attack-techniques.md)
   * [ARP Spoofing](security/attack-techniques/arp-spoofing.md)
-* [AppSec](security/appsec.md)
-  * [XSS](security/xss.md)
+* [Application Security](security/appsec.md)
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
+  * [XSS](security/xss.md)
   * [Tools](security/tools.md)
 * [Malware Analysis](malware-analysis.md)
   * [Malware Techniques](malware-techniques.md)
