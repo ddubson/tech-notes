@@ -11,9 +11,9 @@
   * [Angular CLI](angular-2/angular-cli.md)
   * [Angular Testing](angular-2/angular-testing.md)
   * [Directives](angular-2/directives.md)
-* Networking
+* [Networking](/networking.md)
   * [Concepts](concepts.md)
-  * Application Layer
+  * [Application Layer](/application-layer.md)
     * [DHCP](dhcp.md)
     * [DMZ](dmz.md)
     * [DNS](dns.md)
@@ -94,4 +94,6 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
+
+
 
