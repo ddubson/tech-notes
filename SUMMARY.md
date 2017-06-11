@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [TODOs](todos.md)
 * [Front-End Resources](front-end-resources.md)
 * [Back-End Resources](back-end-resources.md)
   * [Setting up Fluentlenium](back-end-resources/setting-up-fluentlenium.md)
@@ -94,6 +93,4 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Operating Systems](operating-systems.md)
   * [Processes](/processes.md)
-
-
 
