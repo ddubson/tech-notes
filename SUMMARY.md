@@ -111,4 +111,5 @@
   * [Byte Ordering](/computer-organization/byte-ordering.md)
 * [Intel x86 Assembly](intel-x86-assembly.md)
   * [Processor Registers](/x86-assembly/processor-registers.md)
+  * [Addressing Modes](x86-assembly/addressing-modes.md)
 
