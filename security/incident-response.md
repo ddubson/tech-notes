@@ -100,5 +100,39 @@ Consult with attorneys/law enforcement about evidence handling
 
 U.S. federal government must retain all incident handling records for at least 3 years.
 
+---
+
+## Incident Response Policy
+
+Serves as cornerstone of organization's incident response program
+
+Should be written to:
+
+1. Guide efforts
+2. Provide authority for response
+
+Approved at highest levels
+
+Policy is not a place to describe specific technology or procedures
+
+NIST recommends:
+
+* Statement of management commitment
+* Purpose + objectives of policy
+* Scope of policy
+* Definition of cybersec incident terms
+* Organizational structure
+* Prioritization / severity rating scheme
+* Performance measures for CSIRT
+* Reporting and contact forms.
+
+#### Procedures and Playbooks
+
+Procedures provide detailed tactical information that CSIRT members use when responding to incidents.
+
+Playbooks are specific procedures for specific type of events:
+
+e.g. breach of personal info, web server defacement, phishing attacks, etc.
+
 
 
