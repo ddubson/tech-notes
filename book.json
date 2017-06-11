@@ -1,5 +1,5 @@
 {
-   "plugins": ["toggle-chapters", "fontsettings"],
+   "plugins": ["toggle-chapters", "-fontsettings"],
    "pluginsConfig": {
         "fontsettings": {
             "theme": 'white', // 'sepia', 'night' or 'white',
