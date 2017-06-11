@@ -68,6 +68,7 @@
     * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
     * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
     * [Host Threats](security/infosec/host-threats.md)
+  * [Vulnerability Management](security/vulnerability-management.md)
   * OpSec
     * [Concepts](security/concepts.md)
   * [AppSec](security/appsec.md)
