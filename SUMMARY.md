@@ -69,7 +69,7 @@
   * [NAT](nat.md)
   * [SSH/SFTP/SCP](sshsftpscp.md)
 * [Internet Layer](internet-layer.md)
-  * Internet Protocol \(IP\)
+  * [Internet Protocol \(IP\)](internet-protocol-ip.md)
     * [IPv4](ipv4.md)
     * [IPv6](ipv6.md)
     * [IPSec](ipsec.md)
@@ -115,6 +115,4 @@
 * [Intel x86 Assembly](intel-x86-assembly.md)
   * [Processor Registers](/x86-assembly/processor-registers.md)
   * [Addressing Modes](x86-assembly/addressing-modes.md)
-
-
 
