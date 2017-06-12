@@ -10,19 +10,14 @@
   * “singable”
   * cabling
 * AKA Default Gateway
-* Process a routing table
+* Process a routing table higher level function then switch or hub.
 
----
-
-higher level function then switch or hub.
-
-* Routers operate on layer 3 of the OSI
-* The process routers use to direct the flow of traffic among networks is called \*routing\*
+* The process routers use to direct the flow of traffic among networks is called [routing](/concepts/routers.md)
 * Routers commonly use layer 3 addresses \(IP addresses\) to uniquely identify devices on a network.![](/assets/routers-1.png)
 
 ---
 
----
+
 
 
 
