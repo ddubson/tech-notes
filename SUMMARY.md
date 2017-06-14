@@ -8,10 +8,11 @@
 
 * [Information Security](security/infosec.md)
   * [Concepts](security/infosec/concepts.md)
-  * [Governance](security/infosec/governance.md)
   * [Risk Management](security/infosec/risk-management.md)
   * [Controls and Countermeasures](security/infosec/controls-and-countermeasures.md)
   * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
+* [Governance](security/infosec/governance.md)
+  * [Control Frameworks](security/infosec/governance/control-frameworks.md)
 * [Vulnerability Management](security/vulnerability-management.md)
 * [Vulnerability Categories](security/vulnerability-categories.md)
 * [Threats](security/infosec/threats.md)
