@@ -102,37 +102,39 @@ Risk driven
 
   * Payment Card Industry - Data Security Standard \(PCI DSS\)
 
-#### PCI-DSS {#pci-dss}
+### Payment Card Industry - Data Security Standard \(PCI-DSS\) {#pci-dss}
 
 Requirements for vendors to protect cardholder data
 
-* Identifies 12 areas of required control
+Identifies 12 areas of required control
 
-  * Firewalls
+* Firewalls
 
-  * Change system defaults
+* Change system defaults
 
-  * Protect data at rest
+* Protect data at rest
 
-  * Protect data in transit
+* Protect data in transit
 
-  * Use antivirus protection
+* Use antivirus protection
 
-  * Use secure systems and app
+* Use secure systems and app
 
-  * Control Access - need to know
+* Control Access - need to know
 
-  * Unique user IDs
+* Unique user IDs
 
-  * Physical Security
+* Physical Security
 
-  * Track and Monitor Access
+* Track and Monitor Access
 
-  * Test security systems
+* Test security systems
 
-  * Establish policies
+  * 11.2 - Organizations must run internal and external scans on at least a quarterly basis OR after any "significant" change in network config.
+  * 11.2.1 Internal scans must be conducted by qualified personnel and must remediate any high-risk vulnerabilities, repeat scan thereafter.
+  * 11.2.2 External scans must be run by an Approved Scanning Vendor authorized by PCI-SSC
 
-
+* Establish policies
 
 ---
 
