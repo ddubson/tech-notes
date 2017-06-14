@@ -102,9 +102,35 @@ Risk driven
 
   * Payment Card Industry - Data Security Standard \(PCI DSS\)
 
-#### PCI-DSS
+#### PCI-DSS {#pci-dss}
 
+Requirements for vendors to protect cardholder data
 
+* Identifies 12 areas of required control
+
+  * Firewalls
+
+  * Change system defaults
+
+  * Protect data at rest
+
+  * Protect data in transit
+
+  * Use antivirus protection
+
+  * Use secure systems and app
+
+  * Control Access - need to know
+
+  * Unique user IDs
+
+  * Physical Security
+
+  * Track and Monitor Access
+
+  * Test security systems
+
+  * Establish policies
 
 
 
@@ -281,35 +307,7 @@ Trans-border Info Flow
 
   * Report piracy to the Business Software Alliance
 
-* Payment Card Industry Data Security Standard \(PCI DSS\)
-
-  * Requirements for vendors to protect cardholder data
-
-  * Identifies 12 areas of required control
-
-    * Firewalls
-
-    * Change system defaults
-
-    * Protect data at rest
-
-    * Protect data in transit
-
-    * Use antivirus protection
-
-    * Use secure systems and app
-
-    * Control Access - need to know
-
-    * Unique user IDs
-
-    * Physical Security
-
-    * Track and Monitor Access
-
-    * Test security systems
-
-    * Establish policies
+* [Payment Card Industry Data Security Standard \(PCI DSS\)](#pci-dss)
 
 * Auditing
 
