@@ -26,8 +26,6 @@ Based on UK standard \(BS\) 7799 - Information Security Management Systems \(199
 
   * 27006 IT Certification and Accreditation
 
-
-
 #### National Institute for Standards and Measures \(NIST\)
 
 Recommended practices for computer security and risk management
@@ -48,8 +46,6 @@ Recommended practices for computer security and risk management
 
 International effort and vision for IT security
 
-
-
 #### Committee of Sponsoring Organizations of the Treadway Commission \(COSO\)
 
 Enterprise governance/risk based framework
@@ -64,29 +60,21 @@ Enterprise governance/risk based framework
 
 * Reporting
 
-
-
 #### Control Objectives for Information and related Technology \(COBIT\)
 
 IT security control model "harmonized" to operate within COSO
 
 Developed by ISACA
 
-
-
 #### Zachman Framework
 
 Enterprise framework for viewing and defining an enterprise
-
-
 
 #### Sherwood Applied Business Security Architecture \(SABSA\)
 
 Security architecture with similar structure to the Zachman Framework
 
 Risk driven
-
-
 
 #### Information Technology Infrastructure Library \(ITIL\)
 
@@ -114,11 +102,18 @@ Risk driven
 
   * Payment Card Industry - Data Security Standard \(PCI DSS\)
 
+#### PCI-DSS
+
+
+
+
+
 ---
 
 ## Privacy and Common Law
 
 * U.S. related privacy laws:
+
   * 46 US states and 4 US territories have enacted cyber crime laws requiring reporting a breach
   * Laws vary from state to state
 
@@ -148,23 +143,23 @@ Risk driven
 
   7. Accountability - subjects should have a method to hold data collectors accountable for following the above principles
 
-1. Codified Legal System- France, Spain, South America \(Parts of Louisiana\)
+* Codified Legal System- France, Spain, South America \(Parts of Louisiana\)
 
-   1. Rule based, written statutes. 2100 BCMesopotomia\(Modern Iraq\)
+  1. Rule based, written statutes. 2100 BCMesopotomia\(Modern Iraq\)
 
-2. Common Legal System- U.K., U.S.A., Australia
+* Common Legal System- U.K., U.S.A., Australia
 
-   1. Precedent based - ruling by judges rather than written statutes.
+  1. Precedent based - ruling by judges rather than written statutes.
 
-3. Customary Legal System - Native American Indian, China, India
+* Customary Legal System - Native American Indian, China, India
 
-4. Religious Legal System - defined by a deity
+* Religious Legal System - defined by a deity
 
-   1. Halakha \(jewish\), Sharia \(Islamic\)
+  1. Halakha \(jewish\), Sharia \(Islamic\)
 
-5. Hybrid/Mixed - combinations of two or more
+* Hybrid/Mixed - combinations of two or more
 
-   1. Like USA common legal system on a Native American reservation
+  1. Like USA common legal system on a Native American reservation
 
 ### U.S. Common Legal System
 
@@ -212,9 +207,9 @@ Risk driven
 
 ![](/assets/sec-controls-1.png)
 
-![](/assets/GetImage %281%29.png)
+![](/assets/sec-controls-2.png)
 
-![](/assets/GetImage %282%29.png)
+![](/assets/sec-controls-3.png)
 
 Trans-border Info Flow
 
@@ -226,7 +221,7 @@ Trans-border Info Flow
 
     * Must reduce the invention to practice \(not just go to the moon, but how\)
 
-    * Must prove monetary loss from violation to be awarded judgement 
+    * Must prove monetary loss from violation to be awarded judgement
 
   * Copyright: protects the expression of the idea, not the idea - 75 years
 
@@ -258,8 +253,6 @@ Trans-border Info Flow
 
     * Program Manipulation \(if violation is suspected\)
 
-
-
 * World Intellectual Property Organization Copyright Treaty \(WCT 1996\) and the US Digital Millenium act
 
 * Controversial - can prohibit legitimate use, fair use \( for education\)
@@ -269,8 +262,6 @@ Trans-border Info Flow
 * A subset of DRM: Data Loss Prevention \(DLP\)
 
 * Metadata keyword or watermark filtering
-
-
 
 * Software Licensing and Piracy
 
@@ -289,8 +280,6 @@ Trans-border Info Flow
   * Shareware / crippleware / bloatware \(Usually disallowed\)
 
   * Report piracy to the Business Software Alliance
-
-
 
 * Payment Card Industry Data Security Standard \(PCI DSS\)
 
@@ -321,8 +310,6 @@ Trans-border Info Flow
     * Test security systems
 
     * Establish policies
-
-
 
 * Auditing
 
@@ -370,7 +357,7 @@ Trans-border Info Flow
 
       * \# of true positives IDS alerts vs false positive alerts
 
-      * \# of virus infections vs virus alerts 
+      * \# of virus infections vs virus alerts
 
       * \# of serious vulnerabilities reported by scanner
 
