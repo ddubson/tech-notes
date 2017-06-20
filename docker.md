@@ -15,51 +15,52 @@ Docker builds are isolated with respect to 8 aspects:
 
 * cgroups - resource protection
 
-
-
-Linux namespaces and cgroups take care of containers at runtime.![](/assets/docker-2.png)\* \`docker images\` -&gt; list all docker images:
-
-\* Run container with a cmd:
-
-\`docker run \[image:tag\] /bin/echo ‘Hello from your Docker container\`
+## Linux namespaces and cgroups take care of containers at runtime.![](/assets/docker-2.png)Commands
 
 ```
-\* docker launched image and then ran the command \(echo\) in the container
+# List all docker images
+$> docker images
+
+# List all running containers
+$> docker ps
+$> docker ps -l // last run container
+
+# Run container (with examples)
+$> docker run [image:tag] /bin/echo ‘Hello from your Docker container'
+$> docker run -d ubuntu:latest /bin/bash -c "while true; do echo DOCKERMAN; sleep 1; done"
+$> docker run -t -i [image:tag] /bin/bash
+$> docker run -d -p 8080:80 tutum/apache-php
+
+# Stop container execution
+$> docker stop [containerid]
+
+# View container logs
+$> docker logs [containerid]
+
+# Commit container to an image
+$> docker commit [idofcontainer] [nameofnewimage]
+
+# Remove an image
+$> docker rmi [image-id]
+
+# Remove container
+$> docker rm [container-id] 
+
 ```
 
-\* \`docker run -d ubuntu:latest /bin/bash -c "while true; do echo DOCKERMAN; sleep 1; done”\`
+### Flags
 
-```
--d = daemon \(runs inside Docker itself\)
+`-d` - run container as daemon.
 
-with -d command, the print outs are internalized so you can't see the printouts
+`-t` - TTY mode
 
-without the -d command, you would be able to see the image
-```
+`-i` - docker image
 
-\* \`docker logs \[containerid\]\` -&gt; container logs view
-
-\* \`docker stop \[containerid\]\` -&gt; stops an container from running
-
-\* \`docker ps\` -&gt; can get name of running containers
-
-\* \`docker ps -l\` -&gt;  get last run container
-
-\* \`docker run -t -i \[image\] /bin/bash\`
-
-```
-\* -t = TTY
-
-\* -i = image
-```
-
-\* \`docker run -d -p 8080:80 tutum/apache-php\`
+`-p` - port
 
 ## Snapshots
 
-• changes in an image are not saved automatically, so you would have to commit the changes to a new or an existing image
-
-• \`docker commit \[idofcontainer\] \[nameofnewimage\]\` -&gt;  commits an image into a new snapshot
+changes in an image are not saved automatically, so you would have to commit the changes to a new or an existing image via `docker commit` command
 
 ## Attach to a running container
 
@@ -75,65 +76,54 @@ docker ps
 
 • nothing runs because the image does not have any bootup process by itself, starts/stops
 
-• the -d command runs the image as daemon
+• the `-d` command runs the image as daemon
 
 ## Removing images
 
-• \`docker rmi \[image-id\]\` &lt;- remove image by image id
-
-• if there are dependent images, you cannot remove the parent image, it will orphan the dependent images
-
-• \`docker rm \[container-id\] \`&lt;- remove container by container id
+if there are dependent images, you cannot remove the parent image, it will orphan the dependent images
 
 ## Directory Structure
 
 • /var/lib/docker
 
-○ \`cat repositories-devicemapper \| python -mjson.tool\`
+`cat repositories-devicemapper | python -mjson.tool`
 
-○ reference file for repositories/images that exist
+reference file for repositories/images that exist
 
-○ containers directory - containers that have yet to be committed and have dependencies on parent images
+containers directory - containers that have yet to be committed and have dependencies on parent images
 
-○ for any image in containers directory
-
-    § \`cat config.json \| python -mjson.tool\`
+for any image in containers directory - `cat config.json | python -mjson.tool`
 
 ## Startup services
 
 • If you need to start a linux service like httpd on start, you have to add it to a bash startup script
 
-• Edit .bashrc:
-
-    ○ \`/sbin/service httpd start\`
+• Edit .bashrc: `/sbin/service httpd start`
 
 • After editing the file, the container needs to be committed
 
-    ○ \`docker commit \[container-instance\] \[container-name-new\]\`
+```
+docker commit [container-instance] [container-name-new]
+docker run -i -t -d centos:apacherunning /bin/bash
+```
 
-• Run the new container:
-
-    ○ \`docker run -i -t -d centos:apacherunning /bin/bash\`
-
-\#\# Tying it together
+## Dockerfiles
 
 • Create Dockerfile - vi Dockerfile:
 
-    ○ \`FROM centos:centos6\` &lt;- inherit from base image, local images have priority over remote images when building from an image.
-
-    ○ \`MAINTAINER Dmitriy &lt;d.dubson@gmail.com&gt;\`
-
-    ○ RUN yum -y update; yum clean all
-
-    ○ RUN yum -y install httpd
-
-    ○ RUN echo "Apache test site" &gt;&gt; /var/www/html/index.html
-
-    ○ EXPOSE 80 &lt;- making port 80 available publicly
-
-    ○ RUN echo "/sbin/service httpd start" &gt;&gt; /root/.bashrc
+```
+FROM centos:centos6                                             // inherit from base image, local images have priority over remote images when building from an image.
+MAINTAINER <First Last>
+RUN yum -y update; yum clean all
+RUN yum -y install httpd
+RUN echo "Apache test site" >> /var/www/html/index.html
+EXPOSE 80                                                       // making port 80 available publicly
+RUN echo "/sbin/service httpd start" >> /root/.bashrc
+```
 
 • Dockerfile runs under sudo with the commands above
+
+
 
     • Build the container:
 
