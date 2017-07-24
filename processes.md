@@ -4,11 +4,7 @@
 * Multiple processes can run concurrently on the same system and each process appears to have exclusive use of the hardware.
 * Concurrency of processes means the operating system switches between processes, known as **context switching**
 
-## Context Switching
-
-![](/assets/processes-1.png)
-
-## Structure of Process in Memory
+## Context Switching![](/assets/os-processes-1.png)Structure of Process in Memory
 
 * When processes are loaded into memory, they are broken down into many small sections. There are six main sections:
   * **.text** section
@@ -42,29 +38,29 @@
 
 \#\#\# Buffers
 
+```
+• Refer to storage place used to receive and hold data until it can be handled by a process.
 
+• Each process has its own set of buffers --&gt; done by allocating the memory within the .data and .bss section of the process memory.
 
-	• Refer to storage place used to receive and hold data until it can be handled by a process.
-
-	• Each process has its own set of buffers --&gt; done by allocating the memory within the .data and .bss section of the process memory.
-
-	• Once allocated the buffer is fixed length.
-
-
+• Once allocated the buffer is fixed length.
+```
 
 \#\#\# Strings in Memory
 
-	• Strings are continuous arrays of character data in memory
+```
+• Strings are continuous arrays of character data in memory
 
-	• The string is referenced in memory by its first character.
+• The string is referenced in memory by its first character.
 
-	• The string is terminated by a null character \(\o in C\)
-
-
+• The string is terminated by a null character \(\o in C\)
+```
 
 \#\#\# Pointers
 
-	• Hold the address of other pieces of memory
+```
+• Hold the address of other pieces of memory
+```
 
 Pointers are saved in 4 bytes \(DWORD\) of contiguous memory since memory addresses are 32 bits in length
 
