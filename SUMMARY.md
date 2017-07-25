@@ -54,7 +54,6 @@
   * [Directives](angular-2/directives.md)
 * [Back-End Resources](back-end-resources.md)
   * [Setting up Fluentlenium](back-end-resources/setting-up-fluentlenium.md)
-* [Java Security](java-security.md)
 * [Repositories](repositories.md)
 
 ## Networking
