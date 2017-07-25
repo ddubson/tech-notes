@@ -34,9 +34,7 @@
 
 ![](/assets/proc-2.png)
 
-![](/assets/processes-2.png)
-
-\#\#\# Buffers
+### ![](/assets/processes-2.png)Buffers
 
 ```
 • Refer to storage place used to receive and hold data until it can be handled by a process.
@@ -46,7 +44,7 @@
 • Once allocated the buffer is fixed length.
 ```
 
-\#\#\# Strings in Memory
+### Strings in Memory
 
 ```
 • Strings are continuous arrays of character data in memory
@@ -56,11 +54,9 @@
 • The string is terminated by a null character \(\o in C\)
 ```
 
-\#\#\# Pointers
+### Pointers
 
-```
-• Hold the address of other pieces of memory
-```
+Hold the address of other pieces of memory
 
 Pointers are saved in 4 bytes \(DWORD\) of contiguous memory since memory addresses are 32 bits in length
 
@@ -94,8 +90,6 @@ Virtual address space consists of well defined areas:
 * **Shared libraries** - near middle of the address space is an area that holds code and data for shared libs such as C stdlib.
 * **Stack **- top of user's virtual address space is user stack that compiler uses to implement function calls. Stack expands and contracts dynamically during execution.
 * **Kernel virtual memory** - kernel is always resident in memory. top region of address space is reserved for kernel.
-
-
 
 
 
