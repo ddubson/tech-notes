@@ -115,6 +115,7 @@
 ## Computer Organization
 
 * [Computer Organization](/computer-organization.md)
+  * [Architectures](computer-organization/architectures.md)
   * [Typical System Design](/computer-organization/typical-system-design.md)
   * [Memory Hierarchy](/computer-organization/memory-hierarchy.md)
   * [Byte Ordering](/computer-organization/byte-ordering.md)
