@@ -79,5 +79,23 @@ The following steps describe, in sequence, what happens when a computer user run
 * The pivcess runs by itself. It ¡s the OS’s job to track the execution of the process and to respond to requests for system resources. Examples of resources are memory. disk files, and input-output devices.
 * When the process ends, its handle is removed and the memory it used is released so it can be used by other programs.
 
+## Virtual Memory
+
+abstraction that provides each process with the illusion that it has exclusive use of main memory.
+
+Each process has uniform view of memory \(known as **virtual address space**\)
+
+* Each process has a virtual address space layout like so:![](/assets/processes-3.png)
+
+Virtual address space consists of well defined areas:
+
+* **Program code and data** - code begins at same fixed address for all processes, followed by data locations \(global C vars\).
+* **Heap** - code and data areas are followed immediately by the run-time _heap_. Heap expands and contracts on demand.
+* **Shared libraries** - near middle of the address space is an area that holds code and data for shared libs such as C stdlib.
+* **Stack **- top of user's virtual address space is user stack that compiler uses to implement function calls. Stack expands and contracts dynamically during execution.
+* **Kernel virtual memory** - kernel is always resident in memory. top region of address space is reserved for kernel.
+
+
+
 
 
