@@ -12,11 +12,15 @@ Malicious JS can cause havoc in many different ways:
 * DOM can be manipulated to be misleading, unusable, or used in concert with another attack to steal information
 * AJAX calls can be triggered to external malicious sites
 
-Concrete Dangers:
+**Concrete Dangers:**
 
-* Cookie Theft - steal user's cookie and send over to malicious server
-* Keylogging - track keyboard events and record gestures
-* Phishing - replace an already existing form with a malicious information stealing form
+* **Cookie Theft **- steal user's cookie and send over to malicious server
+* **Keylogging **- track keyboard events and record gestures
+* **Phishing **- replace an already existing form with a malicious information stealing form
+
+## Use Cases
+
+* Commenting feature on a web application.
 
 ## Example
 
@@ -57,6 +61,16 @@ This type of attack is usually paired with a phishing campaign.
 ### DOM-based XSS
 
 vulnerability is in the client side code rather than the server side.
+
+
+
+## Discovery
+
+### With [Vega](https://subgraph.com/vega/index.en.html)
+
+> Kali: `apt install vega`
+
+
 
 # Resources
 
