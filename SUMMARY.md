@@ -17,6 +17,8 @@
 * [Vulnerability Categories](security/vulnerability-categories.md)
 * [Threats](security/infosec/threats.md)
   * [Host Threats](security/infosec/host-threats.md)
+* Hardening
+  * [Hosts](security/hosts.md)
 * [Incident Response](security/incident-response.md)
 * [Cryptography](security/cryptography.md)
   * [Algorithms](security/cryptography/algorithms.md)
@@ -28,11 +30,7 @@
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [XSS](security/xss.md)
   * [Tools](security/tools.md)
-* [Malware Analysis](malware-analysis.md)
-  * [Malware Techniques](malware-techniques.md)
-  * [Static Analysis](static-analysis.md)
-  * [Dynamic Analysis](dynamic-analysis.md)
-  * [Running Malware](running-malware.md)
+* Hardening
 
 ## Infrastructure & Virtualization
 
