@@ -17,7 +17,7 @@
 * [Vulnerability Categories](security/vulnerability-categories.md)
 * [Threats](security/infosec/threats.md)
   * [Host Threats](security/infosec/host-threats.md)
-* Hardening
+* [Hardening](security/hardening.md)
   * [Hosts](security/hosts.md)
 * [Incident Response](security/incident-response.md)
 * [Cryptography](security/cryptography.md)

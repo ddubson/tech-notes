@@ -1,5 +1,5 @@
 {
-   "plugins": ["toggle-chapters", "-fontsettings"],
+   "plugins": ["collapsible-chapters", "-fontsettings"],
    "pluginsConfig": {
         "fontsettings": {
             "theme": "white",
