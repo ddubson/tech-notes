@@ -30,7 +30,6 @@
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [XSS](security/xss.md)
   * [Tools](security/tools.md)
-* Hardening
 
 ## Infrastructure & Virtualization
 
@@ -40,6 +39,7 @@
 * [Kubernetes](kubernetes.md)
   * [Install and Configure](kubernetes/install-and-configure.md)
   * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
+* [Serverless](serverless.md)
 
 ## Software Development
 
