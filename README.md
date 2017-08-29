@@ -1,9 +1,8 @@
 # Technical Notes
 
-             \|\|\|\| \|\|\|  
-             \|\|\|\| \|\|\|  
-             \|\|\|\| \|\|\|        Contents of all the things!!  
-             \|\|\|\| \|\|\|  
-            /// ///   
-&lt;&lt;\#\#\#\#\#\#\#
+###### All the things are on the left!
+
+
+
+
 
