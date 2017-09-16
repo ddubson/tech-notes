@@ -34,11 +34,11 @@ SELinux has 3 forms of access control:
 
 All processes + files have an SELinux security context
 
-\`ls -Z\`
+`ls -Z`
 
 The output is based on 'user:role:type:mls
 
-\`ps axZ \| grep httpd\`
+`ps axZ | grep httpd`
 
 ### Logs
 
