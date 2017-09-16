@@ -101,6 +101,7 @@
     * [Create Partition from Free Space](create-partition-from-free-space.md)
     * [SELinux](selinux.md)
     * [CPU and Memory](cpu-and-memory.md)
+    * [Network Services](network-services.md)
     * [Multiuser Targets](multiuser-targets.md)
   * [tar, star, gzip, gunzip](tar-star-gzip-gunzip.md)
   * [Logging](logging.md)
