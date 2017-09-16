@@ -31,6 +31,9 @@
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [XSS](security/xss.md)
   * [Tools](security/tools.md)
+* [Malware Analysis](/malware-analysis.md "Malware Analysis")
+  * [Malware Techniques](/malware-techniques.md "Malware Techniques")
+  * [Running Malware](/running-malware.md)
 
 ## Infrastructure & Virtualization
 
@@ -129,4 +132,6 @@
 * [Compilation Processes](compilerslinkers/compilation-processes.md)
 * [C Lang](compilerslinkers/c-lang.md)
 * [Java](compilerslinkers/java.md)
+
+
 
