@@ -19,6 +19,7 @@
   * [Host Threats](security/infosec/host-threats.md)
 * [Hardening](security/hardening.md)
   * [Hosts](security/hosts.md)
+  * [Host Networking](security/host-networking.md)
 * [Incident Response](security/incident-response.md)
 * [Cryptography](security/cryptography.md)
   * [Algorithms](security/cryptography/algorithms.md)
