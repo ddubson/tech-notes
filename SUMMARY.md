@@ -31,8 +31,8 @@
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [XSS](security/xss.md)
   * [Tools](security/tools.md)
-* [Malware Analysis](/malware-analysis.md "Malware Analysis")
-  * [Malware Techniques](/malware-techniques.md "Malware Techniques")
+* [Malware Analysis](/malware-analysis.md)
+  * [Malware Techniques](/malware-techniques.md)
   * [Running Malware](/running-malware.md)
 
 ## Infrastructure & Virtualization
@@ -107,10 +107,10 @@
     * [CPU and Memory](cpu-and-memory.md)
     * [Network Services](network-services.md)
     * [Multiuser Targets](multiuser-targets.md)
-  * [tar, star, gzip, gunzip](tar-star-gzip-gunzip.md)
   * [Logging](logging.md)
   * [File and Directory Permissions](file-and-directory-permissions.md)
   * [File Systems](file-systems.md)
+  * [Command Reference](command-reference.md)
 
 ## IaaS
 
@@ -132,6 +132,4 @@
 * [Compilation Processes](compilerslinkers/compilation-processes.md)
 * [C Lang](compilerslinkers/c-lang.md)
 * [Java](compilerslinkers/java.md)
-
-
 
