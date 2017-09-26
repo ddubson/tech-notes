@@ -179,18 +179,17 @@ Management is busy managing; keeping their vision on business
 * **Access Control Policy** - organization's requirements for accessing systems and data.
   * may state different data sensitivity levels and describe access to each.
   * should support principle of least privilege.
-* **\*Password Policy\*** - details the requirements for strong passwords, if password authentication is used.
+* **Password Policy** - details the requirements for strong passwords, if password authentication is used.
   * Can include password strength and entropy rules
-* **\*Care and Use of Equipment\*** - restrictions placed on use of org equipment.
+* **Care and Use of Equipment** - restrictions placed on use of org equipment.
   * might also be in Acceptable Use policy
-* **Privacy Policy**\* - applies to internal and external users
-  * /internal/ - lack of expectation of privacy, right to monitor activity and personal data sent over org network.
-  * /external/ - what data is collected, how it is used, under what circumstances, what rights customers have with regard to collection and use of that data.
+* **Privacy Policy** - applies to internal and external users
+  * _internal_ - lack of expectation of privacy, right to monitor activity and personal data sent over org network.
+  * _external_ - what data is collected, how it is used, under what circumstances, what rights customers have with regard to collection and use of that data.
 
 ## Personnel Policies
 
-* Address the requirements regarding how employees interact with systems and data, and how org manages personnel from a security perspective. 
-  * i.e. background checks, credit checks, etc.
+* Address the requirements regarding how employees interact with systems and data, and how org manages personnel from a security perspective, i.e. background checks, credit checks, etc.
 
 
 

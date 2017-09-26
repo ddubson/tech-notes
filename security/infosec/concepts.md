@@ -1,75 +1,74 @@
 # Concepts - CIA Triad - Confidentiality, Integrity, Availability
 
 * Information = value
-  * Any tangible asset has value
-  * “sensitive” information means valuable information
-  * Any compromise of an asset means the enterprise will lose money
-  * **Tangible Assets** = physical
-  * * servers, HDDs, data centers, optical disks
-  * **Intangible Assets **- software, IP, trade secrets
-  * * Info stored on computers, dos, source code, data files, Personally Identifiable Information \(PII\)
-  * Valuable Info Assets
-  * * Value of an asset changes over time
-    * May become more or less valuable over time
-    * The protection required for an asset is directly related to the value of an asset
-    * Don’t over protect \(high cost\), or under protect \(high risk\) asset
-    * The protection must be cost justified
-    * What are valuable info assets of an enterprise?
-    * * IP - trade secrets, know how
-      * financials
-      * marketing info
-      * R&D prog., status, direction
-      * Raw material status, vendor list
-      * Customer lists
-      * Personally Identifiable Information \(PII\)
-* What is PII?
-  * Usually a name +:
+* Any tangible asset has value
+* “sensitive” information means valuable information
+* Any compromise of an asset means the enterprise will lose money
+* **Tangible Assets** = physical
+  * Servers, HDDs, data centers, optical disks
+* **Intangible Assets **- software, IP, trade secrets
+  * Info stored on computers, dos, source code, data files, Personally Identifiable Information \(PII\)
+* Valuable Info Assets
+  * Value of an asset changes over time
+  * May become more or less valuable over time
+  * The protection required for an asset is directly related to the value of an asset
+  * Don’t over protect \(high cost\), or under protect \(high risk\) asset
+  * The protection must be cost justified
+  * What are valuable info assets of an enterprise?
+    * IP - trade secrets, know how
+    * financials
+    * marketing info
+    * R&D prog., status, direction
+    * Raw material status, vendor list
+    * Customer lists
+    * Personally Identifiable Information \(PII\)
 
-  * * Address
-    * Phone
-    * Birth
-    * Age
-    * Height
-    * Eye color
-    * Gender
-    * Marital status
-    * Med info
-    * etc.
-  * Additional info increases risk:
-  * A Credit Card without a name is not PII
-  * A person’s name alone isn’t PII
-  * * Financial account \#
-    * Soc Sec \#
-    * Driver’s License
-    * Employee \#
-    * Passport \#
+## What is PII?
+
+* Usually a person's full name +:: Address, Phone, Birth, Age, Height, Eye color, Gender, Marital status, Med info, etc.
+
+* Additional info increases risk:
+* A Credit Card without a name is not PII
+* A person’s name alone isn’t PII
+* * Financial account \#
+  * Soc Sec \#
+  * Driver’s License
+  * Employee \#
+  * Passport \#
+
 * To protect Valuable Info Assets
-* **Confidentiality **
-  * Keeping secrets secret
-  * Privacy - confidentiality of personally identifiable info \(PII\)
-  * Secrecy - the unauthorized are unaware of the comm. or info asset
-  * Access controls and cryptography \(locked doors, encrypted\)
-    * Can't access
-    * Can't read if access is gained
-  * Restrict access to data
-  * Can also be tunneled
-  * Typically uses cryptography
-  * Can be brute force attacked.
-* **Integrity **
-  * The accuracy, authenticity, completeness, and consistency of info
-  * Integrity protection - keep the bad guys away from the data
-    * Access controls and crypto
-  * Integrity verification - verify accuracy of the data at time of use
-    * Hashing / message digests
-  * Occurs with checksums and FCS
-  * Can also include origin authenticity with additional mechanisms
-    * Least privilege
-    * Separation of duties
-    * Rotation of duties
-    * Forced vacations
-* **Availability **
-  * Having the info accessible when it is needed.
-  * Redundancy, co-location, fault tolerance
+
+## **Confidentiality **
+
+* Keeping secrets secret
+* Privacy - confidentiality of personally identifiable info \(PII\)
+* Secrecy - the unauthorized are unaware of the comm. or info asset
+* Access controls and cryptography \(locked doors, encrypted\)
+  * Can't access
+  * Can't read if access is gained
+* Restrict access to data
+* Can also be tunneled
+* Typically uses cryptography
+* Can be brute force attacked.
+
+## **Integrity **
+
+* The accuracy, authenticity, completeness, and consistency of info
+* Integrity protection - keep the bad guys away from the data
+  * Access controls and crypto
+* Integrity verification - verify accuracy of the data at time of use
+  * Hashing / message digests
+* Occurs with checksums and FCS
+* Can also include origin authenticity with additional mechanisms
+  * Least privilege
+  * Separation of duties
+  * Rotation of duties
+  * Forced vacations
+
+## **Availability **
+
+* Having the info accessible when it is needed.
+* Redundancy, co-location, fault tolerance
 
 ## Additional Elements
 

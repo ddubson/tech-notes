@@ -19,13 +19,9 @@
 
 * Responsible for all aspects of his division
 
-**Custodian** 
+**Custodian - **technician responsible for implementing approved security controls
 
-* technician responsible for implementing approved security controls
-
-**User** 
-
-* has the need to access the information assets, IT resources
+**User - **has the need to access the information assets, IT resources
 
 
 
