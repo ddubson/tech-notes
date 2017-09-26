@@ -1,5 +1,9 @@
 # Front-End Resources
 
+#### **UI Architectures**
+
+* [Flux Architecture](https://facebook.github.io/flux/)
+
 #### Web Frameworks
 
 * [Angular 2](https://angular.io/)
