@@ -17,6 +17,7 @@
 * [Vulnerability Categories](security/vulnerability-categories.md)
 * [Threats](security/infosec/threats.md)
   * [Host Threats](security/infosec/host-threats.md)
+  * [Wireless Threats](security/infosec/wireless-threats.md)
 * [Hardening](security/hardening.md)
   * [Hosts](security/hosts.md)
   * [Host Networking](security/host-networking.md)
