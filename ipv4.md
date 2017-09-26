@@ -1,4 +1,4 @@
-# IPv4
+# IPv4 - Internet Protocol Version 4
 
 * No real authentication between devices on a Wide Area Network \(WAN\), hence easy to spoof IP addresses on networks.
 * No native encryption in IPv4
