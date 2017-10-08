@@ -55,7 +55,6 @@
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
   * [Angular CLI](angular-2/angular-cli.md)
-  * [Angular Testing](angular-2/angular-testing.md)
   * [Directives](angular-2/directives.md)
 * [Back-End Resources](back-end-resources.md)
   * [Setting up Fluentlenium](back-end-resources/setting-up-fluentlenium.md)
