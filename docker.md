@@ -44,8 +44,7 @@ $> docker commit [idofcontainer] [nameofnewimage]
 $> docker rmi [image-id]
 
 # Remove container
-$> docker rm [container-id] 
-
+$> docker rm [container-id]
 ```
 
 ### Flags
@@ -109,7 +108,9 @@ docker run -i -t -d centos:apacherunning /bin/bash
 
 ## Dockerfiles
 
-• Create Dockerfile - vi Dockerfile:
+#### Create Dockerfile
+
+name it Dockerfile
 
 ```
 FROM centos:centos6                                             // inherit from base image, local images have priority over remote images when building from an image.
@@ -121,33 +122,28 @@ EXPOSE 80                                                       // making port 8
 RUN echo "/sbin/service httpd start" >> /root/.bashrc
 ```
 
-• Dockerfile runs under sudo with the commands above
+Dockerfile runs under sudo with the commands above
 
-
-
-    • Build the container:
-
-    ○ \`docker build -t ddubson:centos6 .\`
-
-        \* \`docker build —file Dockerfile —tag mycustomimg/withservices:v1\`
-
-\#\# Pushing Images to Docker Hub
+#### Build the image
 
 ```
-•  hub.docker.com
-
-• free account: 1 private repository only.
-
-• docker push \[image-name\]
+$> docker build -t ddubson:centos6 .
+$> docker build —file Dockerfile —tag mycustomimg/withservices:v1
 ```
 
-Adding External Content
+#### Pushing Images to Docker Hub
 
-```
-• to add content to a container, start an instance of an image then move files using SCP
+hub.docker.com
 
-• In the Dockerfile, we can use the ADD command:
-```
+free account \(1 private repo only\)
+
+`docker push [image-name]`
+
+#### Adding External Content
+
+To add content to a container, start an instance of an image then move files using SCP
+
+In the Dockerfile, we can use the `ADD` command:
 
 ```
 FROM redhat:centos6
@@ -156,19 +152,21 @@ MAINTAINTER Dmitriy Dubson <ddubson@example.com>
 ADD testfile.html /var/www/html/testfile.html
 ```
 
-Image Volume Management
+### Image Volume Management
 
 Create a volume for any running container:
 
-\`docker run -i -t -v /myapp test:html /bin/bash\`
+`docker run -i -t -v /myapp test:html /bin/bash`
 
 ```
 -v = volume
 ```
 
-• We can create an empty directory on the local filesystem and mount that volume to the docker container
+We can create an empty directory on the local filesystem and mount that volume to the docker container
 
-• docker run -t -i -v /root/myvolume:/var/volume test:html /bin/bash
+```
+docker run -t -i -v /root/myvolume:/var/volume test:html /bin/bash
+```
 
 where myvolume is a folder on the local system
 
@@ -223,7 +221,7 @@ Interactive Shell Control
 • docker exec -t -i MYCONTAINER /usr/bin/top &lt;= attaching to a process in a container
 ```
 
-\#\# Previous Container Management
+#### Previous Container Management
 
 ```
 • docker ps -a =&gt; history of all containers that ever ran
@@ -233,7 +231,7 @@ Interactive Shell Control
 
 Docker ps -a \| grep '7 days ago' \| awk '{print $1}' \| xargs docker rm - delete everything that is 7 days ago
 
-\#\# Container Routing
+#### Container Routing
 
 ```
 • Set a static route
@@ -241,14 +239,14 @@ Docker ps -a \| grep '7 days ago' \| awk '{print $1}' \| xargs docker rm - delet
 
 Route add -net \[ip\] netmask 255.255.255.0 gw \[gatewayip\]
 
-\#\# Sharing Container Resources
+#### Sharing Container Resources
 
 ```
 > docker run -d -i -t -v /data --name DATA1 ubuntu:latest /bin/bash
 > docker run -d -i -t --volumes-from DATA1 --name DATA2 ubuntu:latest /bin/bash
 ```
 
-\#\# Committing a running container
+#### Committing a running container
 
 ```
 • Run an image: docker run -t -i ubuntu:latest /bin/bash
@@ -338,7 +336,7 @@ Useful Docker CLI Commands
     ○ top command into a container
 ```
 
-Optimizing Dockerfile Builds
+#### Optimizing Dockerfile Builds
 
-docker images -t \(can see all the layers of containers that were built by Dockerfile\)
+`docker images -t` \(can see all the layers of containers that were built by Dockerfile\)
 
