@@ -13,6 +13,7 @@
   * [Roles and Responsibilities](security/infosec/roles-and-responsibilities.md)
 * [Governance](security/infosec/governance.md)
   * [Control Frameworks](security/infosec/governance/control-frameworks.md)
+* [Intellectual Property](security/intellectual-property.md)
 * [Vulnerability Management](security/vulnerability-management.md)
 * [Vulnerability Categories](security/vulnerability-categories.md)
 * [Threats](security/infosec/threats.md)
@@ -32,9 +33,7 @@
   * [OWASP Application Security Testing](security/owasp-application-security-testing.md)
   * [XSS](security/xss.md)
   * [Tools](security/tools.md)
-* [Malware Analysis](/malware-analysis.md)
-  * [Malware Techniques](/malware-techniques.md)
-  * [Running Malware](/running-malware.md)
+* Intellectual Property
 
 ## Infrastructure & Virtualization
 
