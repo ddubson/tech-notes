@@ -49,7 +49,6 @@
 
 * [Software Architecture](software-architecture.md)
   * [Event-Driven Architecture](software-architecture/event-driven-architecture.md)
-* [Front-End Resources](front-end-resources.md)
 * [Angular 2](angular-2.md)
   * [Creating a Project](angular-2/creating-a-project.md)
   * [Running Application Locally](angular-2/running-application-locally.md)
