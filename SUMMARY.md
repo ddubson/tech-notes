@@ -37,7 +37,6 @@
 
 ## Infrastructure & Virtualization
 
-* [Docker](docker.md)
 * [VMWare](vmware.md)
   * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
 * [Kubernetes](kubernetes.md)
