@@ -118,7 +118,6 @@
 
 ## Compilers/Linkers
 
-* [Compilation Processes](compilerslinkers/compilation-processes.md)
 * [C Lang](compilerslinkers/c-lang.md)
 * [Java](compilerslinkers/java.md)
 
