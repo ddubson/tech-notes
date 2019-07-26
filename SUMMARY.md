@@ -116,8 +116,3 @@
   * [Processor Registers](/x86-assembly/processor-registers.md)
   * [Addressing Modes](x86-assembly/addressing-modes.md)
 
-## Compilers/Linkers
-
-* [C Lang](compilerslinkers/c-lang.md)
-* [Java](compilerslinkers/java.md)
-
