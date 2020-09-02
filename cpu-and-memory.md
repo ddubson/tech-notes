@@ -68,6 +68,3 @@ renice -n 10 ${pgrep httpd}      # renice all httpds (via invoking a subshell)
 * Load average is the percent of the processor usage
 * `cat /proc/cpuinfo`-&gt; identify number of processors
 * Load average = \(\(load\) / \# of processors\) \* 100 \( e.g. \(0.53 / 2\) \* 100 = load on the cpu\)
-
-
-
