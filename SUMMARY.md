@@ -50,38 +50,6 @@
   * [Angular CLI](angular-2/angular-cli.md)
   * [Directives](angular-2/directives.md)
 
-## Networking
-
-
-* [Subnetting & Masking](subnetting-and-masking.md)
-* [Application Layer](/application-layer.md)
-  * [DHCP](dhcp.md)
-  * [DMZ](dmz.md)
-  * [DNS](dns.md)
-  * [SNMP](snmp.md)
-  * [NAT](nat.md)
-  * [SSH/SFTP/SCP](sshsftpscp.md)
-* [Internet Layer](internet-layer.md)
-  * [Internet Protocol \(IP\)](internet-protocol-ip.md)
-    * [IPv4](ipv4.md)
-    * [IPv6](ipv6.md)
-    * [IPSec](ipsec.md)
-  * [ICMP](icmp.md)
-  * [SSL and TLS](ssl-and-tls.md)
-  * [DNS](/dns.md)
-* Link Layer
-  * [ARP](arp.md)
-  * [Fibre Channel](fibre-channel.md)
-  * [Ethernet](ethernet.md)
-* [Hardware](hardware.md)
-  * [Switches](switches.md)
-  * [Hubs](hubs.md)
-  * [Routers](routers.md)
-  * [Bridges \(802.1D\)](bridges-8021d.md)
-* [Tools](tools.md)
-  * [nslookup recipes](nslookup-recipes.md)
-* [Packet Analysis](packet-analysis.md)
-
 ## Operating Systems
 
 * [Operating System Concepts](operating-systems.md)
