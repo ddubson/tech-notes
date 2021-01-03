@@ -52,7 +52,7 @@
 
 ## Networking
 
-* [Traffic Classifications](traffic-classifications.md)
+
 * [Subnetting & Masking](subnetting-and-masking.md)
 * [Application Layer](/application-layer.md)
   * [DHCP](dhcp.md)
