@@ -35,20 +35,12 @@
 
 * [VMWare](vmware.md)
   * [Installing VMWare Tools on CLI](installing-vmware-tools-on-cli.md)
-* [Kubernetes](kubernetes.md)
-  * [Install and Configure](kubernetes/install-and-configure.md)
-  * [Running Containers in a Pod](kubernetes/running-containers-in-a-pod.md)
 * [Serverless](serverless.md)
 
 ## Software Development
 
 * [Software Architecture](software-architecture.md)
   * [Event-Driven Architecture](software-architecture/event-driven-architecture.md)
-* [Angular 2](angular-2.md)
-  * [Creating a Project](angular-2/creating-a-project.md)
-  * [Running Application Locally](angular-2/running-application-locally.md)
-  * [Angular CLI](angular-2/angular-cli.md)
-  * [Directives](angular-2/directives.md)
 
 ## Operating Systems
 
